@@ -107,7 +107,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Com.Airbnb.Android.Lottie">
-      <Version>2.5.2</Version>
+      <Version>2.5.2.1</Version>
     </PackageReference>
     <PackageReference Include="GeoCoordinate">
       <Version>2.0.1</Version>
@@ -125,10 +125,10 @@
     <PackageReference Include="Xamarin.Firebase.Messaging">
       <Version>60.1142.1</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.GooglePlayServices.Base">
+    <PackageReference Include="Xamarin.GooglePlayServices.Basement">
       <Version>60.1142.1</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.GooglePlayServices.Basement">
+    <PackageReference Include="Xamarin.GooglePlayServices.Gcm">
       <Version>60.1142.1</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.GooglePlayServices.Location">
