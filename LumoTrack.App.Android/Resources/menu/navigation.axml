@@ -1,0 +1,36 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <item
+    android:orderInCategory="0"
+    android:enabled="true"
+    android:id="@+id/all_puppies"
+      android:title="@string/map"
+      android:icon="@mipmap/map" 
+    app:showAsAction="always"/>
+
+  <item
+    android:orderInCategory="1"
+    android:enabled="true"
+    android:id="@+id/all_puppies"
+      android:title="@string/map"
+      android:icon="@mipmap/map" 
+    app:showAsAction="always"/>
+
+  <item
+    android:orderInCategory="2"
+    android:enabled="true"
+    android:id="@+id/all_puppies"
+      android:title="@string/map"
+      android:icon="@mipmap/map" 
+    app:showAsAction="always"/>
+
+  <item
+    android:orderInCategory="3"
+    android:enabled="true"
+    android:id="@+id/all_puppies"
+      android:title="@string/map"
+      android:icon="@mipmap/map" 
+    app:showAsAction="always"/>
+
+</menu>

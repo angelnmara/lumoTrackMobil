@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "363782701847",
+    "firebase_url": "https://kucktracklumo.firebaseio.com",
+    "project_id": "kucktracklumo",
+    "storage_bucket": "kucktracklumo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:363782701847:android:abeee0f2f44e16bc",
+        "android_client_info": {
+          "package_name": "com.lumotest.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "363782701847-ikprhmrev891r72t3l5b6l6thfl26mid.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEY_v7rNoE_rM6f_BsXQMJlJvmjn0W78E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

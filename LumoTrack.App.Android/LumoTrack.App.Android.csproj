@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{52381C0D-EAAA-42D6-BAE9-66657B9E0A21}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{e0dc9abc-7303-488b-8af1-61e341bd2a32}</TemplateGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LumoTrack.App.Android</RootNamespace>
+    <AssemblyName>LumoTrack.App.Android</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
+    <AotAssemblies>false</AotAssemblies>
+    <EnableLLVM>false</EnableLLVM>
+    <BundleAssemblies>false</BundleAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidManagedSymbols>true</AndroidManagedSymbols>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+    <AotAssemblies>false</AotAssemblies>
+    <EnableLLVM>false</EnableLLVM>
+    <BundleAssemblies>false</BundleAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Activities\MainActivity.cs" />
+    <Compile Include="Activities\SplashActivity.cs" />
+    <Compile Include="Adapters\InboxAdapter.cs" />
+    <Compile Include="Adapters\NotificationAdapter.cs" />
+    <Compile Include="Adapters\TruckSpinner.cs" />
+    <Compile Include="Fragments\CommentFragment.cs" />
+    <Compile Include="Fragments\ConfigurationFragment.cs" />
+    <Compile Include="Fragments\InboxFragment.cs" />
+    <Compile Include="Fragments\MapFragment.cs" />
+    <Compile Include="Fragments\MessageSend.cs" />
+    <Compile Include="Fragments\NavbarFragment.cs" />
+    <Compile Include="Fragments\NewsFragment.cs" />
+    <Compile Include="Helpers\AlertDialogHelper.cs" />
+    <Compile Include="Helpers\CustomFirebaseMessagingService.cs" />
+    <Compile Include="Helpers\DeviceManager.cs" />
+    <Compile Include="Helpers\EditTextTouchListener.cs" />
+    <Compile Include="Helpers\FirebaseIIDService.cs" />
+    <Compile Include="Helpers\InternetConnectionHelper.cs" />
+    <Compile Include="Helpers\Receiver.cs" />
+    <Compile Include="Helpers\TimeZoneHelper.cs" />
+    <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <GoogleServicesJson Include="google-services.json" />
+    <AndroidAsset Include="Assets\loader.json" />
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Properties\AndroidManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Assets\AboutAssets.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\colors.xml" />
+    <AndroidResource Include="Resources\values\dimens.xml" />
+    <AndroidResource Include="Resources\values\ic_launcher_background.xml" />
+    <AndroidResource Include="Resources\values\strings.xml" />
+    <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\drawable\ic_home_black_24dp.xml" />
+    <AndroidResource Include="Resources\drawable\ic_dashboard_black_24dp.xml" />
+    <AndroidResource Include="Resources\drawable\ic_notifications_black_24dp.xml" />
+    <AndroidResource Include="Resources\menu\navigation.xml" />
+    <AndroidResource Include="Resources\mipmap-anydpi-v26\ic_launcher_round.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Com.Airbnb.Android.Lottie">
+      <Version>2.5.2</Version>
+    </PackageReference>
+    <PackageReference Include="GeoCoordinate">
+      <Version>2.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.Design" Version="28.0.0-preview8" />
+    <PackageReference Include="Xamarin.Firebase.Common">
+      <Version>60.1142.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Firebase.Core">
+      <Version>60.1142.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Firebase.Iid">
+      <Version>60.1142.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Firebase.Messaging">
+      <Version>60.1142.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.GooglePlayServices.Base">
+      <Version>60.1142.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.GooglePlayServices.Basement">
+      <Version>60.1142.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.GooglePlayServices.Location">
+      <Version>60.1142.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.GooglePlayServices.Maps">
+      <Version>60.1142.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.GooglePlayServices.Tasks">
+      <Version>60.1142.1</Version>
+    </PackageReference>
+    <PackageReference Include="Zorbek.Core.Security.Commons">
+      <Version>1.3.3</Version>
+    </PackageReference>
+    <PackageReference Include="Zorbek.Essentials.Std.Utilities">
+      <Version>1.3.2</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\MapLayout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Main.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\NavBarFragment.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\NewsLayout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\InboxLayout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\CommentLayout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\MessageSentLayout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\ConfigurationLayout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\NotificationLayout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LumoTrack.Common\LumoTrack.Common.csproj">
+      <Project>{b5132842-13c1-4537-bc2f-70ad6bf2a667}</Project>
+      <Name>LumoTrack.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LumoTrack.DTO\LumoTrack.DTO.csproj">
+      <Project>{0C2DBF16-CA1F-473C-8D16-7FDEEB3557B5}</Project>
+      <Name>LumoTrack.DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LumoTrack.ProxyContract\LumoTrack.ProxyContract.csproj">
+      <Project>{E2CE2EA0-4AC6-4511-B28E-CE14CF7C25E4}</Project>
+      <Name>LumoTrack.ProxyContract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LumoTrack.Proxy\LumoTrack.Proxy.csproj">
+      <Project>{162DFDFD-E161-40CB-B1E5-F4394B2CAACC}</Project>
+      <Name>LumoTrack.Proxy</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\InboxResponseLayout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Border.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\BottonBorder.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-hdpi\Refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-mdpi\Refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xhdpi\Refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xxhdpi\Refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\Refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\WindowsInfoAdapterLayout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\images\img_0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Shadow.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ShadowWindowInfo.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\NotificationIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-hdpi\StatusIconTruck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-mdpi\StatusIconTruck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xhdpi\StatusIconTruck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xxhdpi\StatusIconTruck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\StatusIconTruck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\StatusIconTruck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-hdpi\TruckPin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-hdpi\UserPin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-mdpi\TruckPin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-mdpi\UserPin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xhdpi\TruckPin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xhdpi\UserPin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xxhdpi\TruckPin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xxhdpi\UserPin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\TruckPin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\UserPin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\backgrounditem.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\splash.xml" />
+    <AndroidResource Include="Resources\drawable\spinner_item.xml" />
+    <AndroidResource Include="Resources\drawable\selector.xml" />
+    <AndroidResource Include="Resources\drawable\iconapp.png" />
+    <AndroidResource Include="Resources\drawable\ic_launcher_background.xml" />
+    <AndroidResource Include="Resources\drawable\nav_item_color.xml" />
+    <Content Include="Resources\drawable\Splashscreen.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <AndroidResource Include="Resources\mipmap-mdpi\Add.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\Center.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\ES_Message.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\ES_Notification.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\Map.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\Message.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\MessageSent.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\Municipio.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\Notification.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\SigueTuCamion.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\User.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\Add.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\Center.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ES_Message.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ES_Notification.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\Map.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\Message.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\MessageSent.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\Municipio.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\Notification.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\SigueTuCamion.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\User.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\Add.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\Center.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\ES_Message.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\ES_Notification.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\Map.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\Message.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\MessageSent.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\Municipio.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\Notification.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\SigueTuCamion.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\User.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\Add.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\Center.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ES_Message.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ES_Notification.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\Map.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\Message.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\MessageSent.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\Municipio.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\Notification.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\SigueTuCamion.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\User.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\Add.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\Center.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\ES_Message.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\ES_Notification.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\Map.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\Message.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\MessageSent.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\Municipio.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\Notification.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\SigueTuCamion.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\User.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\bg.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\bg.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\bg.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\bg.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\bg.png" />
+    <AndroidResource Include="Resources\drawable\TableBox.xml" />
+    <AndroidResource Include="Resources\mipmap-mdpi\Splashscreen.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\Splashscreen.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\Splashscreen.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\Splashscreen.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\Splashscreen.png" />
+    <AndroidResource Include="Resources\mipmap-anydpi-v26\ic_launcher.xml" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_launcher_icon.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\ic_launcher_icon.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\Splashcreen.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\ic_launcher_icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_launcher_icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher_icon.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\lumonotificationicon.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\lumonotificationicon.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\People.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+    Other similar extension points exist, see Microsoft.Common.targets.
+    <Target Name="BeforeBuild">
+    </Target>
+    <Target Name="AfterBuild">
+    </Target>
+  -->
+</Project>

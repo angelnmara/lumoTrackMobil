@@ -1,0 +1,611 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Xamarin.Build.Download.0.4.6\build\Xamarin.Build.Download.props" Condition="Exists('..\packages\Xamarin.Build.Download.0.4.6\build\Xamarin.Build.Download.props')" />
+  <Import Project="..\packages\Xamarin.Build.Download.0.4.9\build\Xamarin.Build.Download.props" Condition="Exists('..\packages\Xamarin.Build.Download.0.4.9\build\Xamarin.Build.Download.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{9BEE6E19-CFA3-4E85-944E-8CA79C2434EC}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>LumoTrack.App.iOS</RootNamespace>
+    <AssemblyName>LumoTrack.App.iOS</AssemblyName>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer: Antonio Martorell (6YKWF54877)</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <IOSDebuggerPort>27492</IOSDebuggerPort>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <DeviceSpecificBuild>false</DeviceSpecificBuild>
+    <MtouchVerbosity>
+    </MtouchVerbosity>
+    <CodesignProvision>VS: WildCard Development</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Distribution: KUK TRACK SA DE CV (BZAF4NDZBD)</CodesignKey>
+    <MtouchUseLlvm>true</MtouchUseLlvm>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARM64</MtouchArch>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <MtouchVerbosity>
+    </MtouchVerbosity>
+    <CodesignProvision>Lumotrack Prod</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer: Antonio Martorell (6YKWF54877)</CodesignKey>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <MtouchVerbosity>
+    </MtouchVerbosity>
+    <CodesignProvision>VS: WildCard Development</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer: Antonio Martorell (6YKWF54877)</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchFloat32>true</MtouchFloat32>
+    <IOSDebuggerPort>44552</IOSDebuggerPort>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARM64</MtouchArch>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <MtouchVerbosity>
+    </MtouchVerbosity>
+    <CodesignProvision>VS: WildCard Development</CodesignProvision>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="MonoTouch.Dialog-1" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Zorbek.Essentials.Std.Utilities">
+      <HintPath>..\packages\Zorbek.Essentials.Std.Utilities.1.3.2\lib\netstandard2.0\Zorbek.Essentials.Std.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\netstandard1.3\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Zorbek.Essentials.Clients">
+      <HintPath>..\packages\Zorbek.Essentials.Clients.1.1.4\lib\netstandard2.0\Zorbek.Essentials.Clients.dll</HintPath>
+    </Reference>
+    <Reference Include="Camille.Core.ApiClient">
+      <HintPath>..\packages\Camille.Core.ApiClient.1.1.3\lib\Camille.Core.ApiClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json.Bson">
+      <HintPath>..\packages\Newtonsoft.Json.Bson.1.0.1\lib\netstandard1.3\Newtonsoft.Json.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.6\lib\netstandard2.0\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="Zorbek.Core.Security.Commons">
+      <HintPath>..\packages\Zorbek.Core.Security.Commons.1.3.3\lib\netstandard2.0\Zorbek.Core.Security.Commons.dll</HintPath>
+    </Reference>
+    <Reference Include="Zorbek.Core.Security.Client">
+      <HintPath>..\packages\Zorbek.Core.Security.Client.2.0.9-preview\lib\netstandard2.0\Zorbek.Core.Security.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.Core">
+      <HintPath>..\packages\Xamarin.Firebase.iOS.Core.4.0.8\lib\Xamarin.iOS10\Firebase.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.InstanceID">
+      <HintPath>..\packages\Xamarin.Firebase.iOS.InstanceID.2.0.4\lib\Xamarin.iOS10\Firebase.InstanceID.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.Analytics">
+      <HintPath>..\packages\Xamarin.Firebase.iOS.Analytics.4.0.4\lib\Xamarin.iOS10\Firebase.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.CloudMessaging">
+      <HintPath>..\packages\Xamarin.Firebase.iOS.CloudMessaging.2.0.4\lib\Xamarin.iOS10\Firebase.CloudMessaging.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Permissions">
+      <HintPath>..\packages\Plugin.Permissions.3.0.0.12\lib\xamarinios10\Plugin.Permissions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\First.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\First.imageset\vector.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Second.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Second.imageset\vector.pdf">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Assets.xcassets\CenterIcon.imageset\Center.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Assets.xcassets\CenterIcon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Assets.xcassets\.DS_Store">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\CenterMapIcon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\CenterMapIcon.imageset\Center%401x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\CenterMapIcon.imageset\Center%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\MapIcon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\MapIcon.imageset\Map%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\MapIcon.imageset\Map%401x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\UserIcon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\TruckPinIcon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\TruckPinIcon.imageset\TruckPin%401x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\TruckPinIcon.imageset\TruckPin%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\TruckPinIcon.imageset\TruckPin%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\RefreshIcon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\RefreshIcon.imageset\Refresh%401x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\RefreshIcon.imageset\Refresh%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\RefreshIcon.imageset\Refresh%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\NotificationIcon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\NotificationIcon.imageset\Notifications%401x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\NotificationIcon.imageset\Notifications%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\MessagesIcon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\MessagesIcon.imageset\Messages%401x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\MessagesIcon.imageset\Messages%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\UserIcon.imageset\User%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\UserIcon.imageset\User%401x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\UserPinIcon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\UserPinIcon.imageset\UserPin%401x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\UserPinIcon.imageset\UserPin%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\UserPinIcon.imageset\UserPin%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\MapIcon.imageset\MapIconx1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\MessagesIcon.imageset\MessageActivex1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\NotificationIcon.imageset\NotificationIconx1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\UserIcon.imageset\UserActivex1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\UserIcon.imageset\UserActivex3.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\NotificationIcon.imageset\NotificationIconx3.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\MessagesIcon.imageset\MessageActivex3.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\MapIcon.imageset\MapIconx3.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Splashscreen.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmptyStateMessage.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmptyStateNotification.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-29x29%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-29x29%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-40x40%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-40x40%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-60x60%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-60x60%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-20x20%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-20x20%401x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-20x20%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-29x29%401x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmptyStateMessage.imageset\ES_DIASx1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmptyStateNotification.imageset\ES_AVISOSx1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmptyStateMessage.imageset\ES_DIASx3.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmptyStateNotification.imageset\ES_AVISOSx3.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Splashscreen.imageset\SplashScreenx1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Splashscreen.imageset\SplashScreenx3.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\UserIcon.imageset\UserActive%40x1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\NotificationIcon.imageset\NotificationIcon%40x1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\MessagesIcon.imageset\MessageActive%40x1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\MapIcon.imageset\MapIcon%40x1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\UserIcon.imageset\UserActive%40x3.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\NotificationIcon.imageset\NotificationIcon%40x3.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\MessagesIcon.imageset\MessageActive%40x3.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\MapIcon.imageset\MapIcon%40x3.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Assets.xcassets\UserTest.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Assets.xcassets\UserTest.imageset\UserActive%40x1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Assets.xcassets\UserTest.imageset\UserActive%40x2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Assets.xcassets\UserTest.imageset\UserActive%40x3.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\MessageSentIcon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Municipio.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Logo.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmptyStateMessage.imageset\ES_Message%401x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmptyStateNotification.imageset\ES_Notification%401x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\MessagesIcon.imageset\Message%401x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\NotificationIcon.imageset\Notification%401x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Splashscreen.imageset\Splashscreen%401x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\MessageSentIcon.imageset\MessageSent%401x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Municipio.imageset\Municipio%401x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Logo.imageset\SigueTuCamion%401x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\MapIcon.imageset\Map%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\MessagesIcon.imageset\Message%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\NotificationIcon.imageset\Notification%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Splashscreen.imageset\Splashscreen%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\UserIcon.imageset\User%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\MessageSentIcon.imageset\MessageSent%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Municipio.imageset\Municipio%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmptyStateMessage.imageset\ES_Message%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmptyStateNotification.imageset\ES_Notification%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\MessagesIcon.imageset\Message%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\NotificationIcon.imageset\Notification%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Splashscreen.imageset\Splashscreen%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\MessageSentIcon.imageset\MessageSent%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Municipio.imageset\Municipio%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Logo.imageset\SigueTuCamion%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\EmptyStateNotification.imageset\ES_Notification%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Logo.imageset\SigueTuCamion%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Background.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Background.imageset\bg%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Background.imageset\bg%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Background.imageset\bg%401x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets.xcassets\Background.imageset\" />
+    <Folder Include="Assets.xcassets\CenterIcon.imageset\" />
+    <Folder Include="Assets.xcassets\CenterMapIcon.imageset\" />
+    <Folder Include="Assets.xcassets\EmptyStateMessage.imageset\" />
+    <Folder Include="Assets.xcassets\EmptyStateNotification.imageset\" />
+    <Folder Include="Assets.xcassets\EsMessage.imageset\" />
+    <Folder Include="Assets.xcassets\ESNotification.imageset\" />
+    <Folder Include="Assets.xcassets\InboxIcon.imageset\" />
+    <Folder Include="Assets.xcassets\Logo.imageset\" />
+    <Folder Include="Assets.xcassets\MapIcon.imageset\" />
+    <Folder Include="Assets.xcassets\MessageSentIcon.imageset\" />
+    <Folder Include="Assets.xcassets\MessagesIcon.imageset\" />
+    <Folder Include="Assets.xcassets\Municipio.imageset\" />
+    <Folder Include="Assets.xcassets\NotificationIcon.imageset\" />
+    <Folder Include="Assets.xcassets\PeopleIcon.imageset\" />
+    <Folder Include="Assets.xcassets\Refresh.imageset\" />
+    <Folder Include="Assets.xcassets\RefreshIcon.imageset\" />
+    <Folder Include="Assets.xcassets\Splashscreeen.imageset\" />
+    <Folder Include="Assets.xcassets\Splashscreen.imageset\" />
+    <Folder Include="Assets.xcassets\TruckPinIcon.imageset\" />
+    <Folder Include="Assets.xcassets\UserIcon.imageset\" />
+    <Folder Include="Assets.xcassets\UserPinIcon.imageset\" />
+    <Folder Include="Assets.xcassets\UserTest.imageset\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="LaunchScreen.storyboard" />
+    <InterfaceDefinition Include="Main.storyboard" />
+    <InterfaceDefinition Include="ViewControllers\MapViewController.xib" />
+    <InterfaceDefinition Include="Resources\en.lproj\Main.storyboard" />
+    <InterfaceDefinition Include="ViewControllers\CommentViewController.xib" />
+    <InterfaceDefinition Include="ViewControllers\CommentTableViewController.xib" />
+    <InterfaceDefinition Include="ViewControllers\NotificationTableViewController.xib" />
+    <InterfaceDefinition Include="ViewControllers\CommentSentViewController.xib" />
+    <InterfaceDefinition Include="ViewControllers\ConfigurationViewController.xib" />
+    <InterfaceDefinition Include="TableViewCell\InboxViewCell.xib" />
+    <InterfaceDefinition Include="TableViewCell\NotificationViewCell.xib" />
+    <InterfaceDefinition Include="ViewControllers\TabBarController.xib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="ViewControllers\MapViewController.cs" />
+    <Compile Include="ViewControllers\MapViewController.designer.cs">
+      <DependentUpon>MapViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\CommentViewController.cs" />
+    <Compile Include="ViewControllers\CommentViewController.designer.cs">
+      <DependentUpon>CommentViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\CommentTableViewController.cs" />
+    <Compile Include="ViewControllers\CommentTableViewController.designer.cs">
+      <DependentUpon>CommentTableViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\NotificationTableViewController.cs" />
+    <Compile Include="ViewControllers\NotificationTableViewController.designer.cs">
+      <DependentUpon>NotificationTableViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\CommentSentViewController.cs" />
+    <Compile Include="ViewControllers\CommentSentViewController.designer.cs">
+      <DependentUpon>CommentSentViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\ConfigurationViewController.cs" />
+    <Compile Include="ViewControllers\ConfigurationViewController.designer.cs">
+      <DependentUpon>ConfigurationViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delegate\MapDelegate.cs" />
+    <Compile Include="Annotations\TruckAnnotation.cs" />
+    <Compile Include="Helpers\LocationManager.cs" />
+    <Compile Include="Helpers\LocationUpdatedEventArgs.cs" />
+    <Compile Include="TableViewSource\NotificationTableSource.cs" />
+    <Compile Include="TableViewCell\InboxViewCell.cs" />
+    <Compile Include="TableViewCell\InboxViewCell.designer.cs">
+      <DependentUpon>InboxViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableView\NotificationTableView.cs" />
+    <Compile Include="TableView\NotificationTableView.designer.cs">
+      <DependentUpon>NotificationTableView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoundedBox.cs" />
+    <Compile Include="RoundedBox.designer.cs">
+      <DependentUpon>RoundedBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\RoundedBox.cs" />
+    <Compile Include="Annotations\UserAnnotation.cs" />
+    <Compile Include="TableViewCell\NotificationViewCell.cs" />
+    <Compile Include="TableViewCell\NotificationViewCell.designer.cs">
+      <DependentUpon>NotificationViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableViewSource\InboxTableSource.cs" />
+    <Compile Include="ViewControllers\NavigationViewController.cs" />
+    <Compile Include="ViewControllers\NavigationViewController.designer.cs">
+      <DependentUpon>NavigationViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PickerView\TruckPicker.cs" />
+    <Compile Include="PickerView\ReportPicker.cs" />
+    <Compile Include="Helpers\DeviceManager.cs" />
+    <Compile Include="Helpers\TimeZoneHelper.cs" />
+    <Compile Include="ViewControllers\TabBarController.cs" />
+    <Compile Include="ViewControllers\TabBarController.designer.cs">
+      <DependentUpon>TabBarController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\InternetConnectionHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LumoTrack.DTO\LumoTrack.DTO.csproj">
+      <Project>{0C2DBF16-CA1F-473C-8D16-7FDEEB3557B5}</Project>
+      <Name>LumoTrack.DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LumoTrack.Proxy\LumoTrack.Proxy.csproj">
+      <Project>{162DFDFD-E161-40CB-B1E5-F4394B2CAACC}</Project>
+      <Name>LumoTrack.Proxy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LumoTrack.ProxyContract\LumoTrack.ProxyContract.csproj">
+      <Project>{E2CE2EA0-4AC6-4511-B28E-CE14CF7C25E4}</Project>
+      <Name>LumoTrack.ProxyContract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LumoTrack.Common\LumoTrack.Common.csproj">
+      <Project>{B5132842-13C1-4537-BC2F-70AD6BF2A667}</Project>
+      <Name>LumoTrack.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\.DS_Store" />
+    <BundleResource Include="GoogleService-Info.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <ITunesArtwork Include="iTunesArtwork%402x" />
+    <ITunesArtwork Include="iTunesArtwork" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <Import Project="..\packages\Xamarin.Firebase.iOS.Analytics.4.0.4\build\Xamarin.Firebase.iOS.Analytics.targets" Condition="Exists('..\packages\Xamarin.Firebase.iOS.Analytics.4.0.4\build\Xamarin.Firebase.iOS.Analytics.targets')" />
+  <Import Project="..\packages\Xamarin.Firebase.iOS.CloudMessaging.2.0.4\build\Xamarin.Firebase.iOS.CloudMessaging.targets" Condition="Exists('..\packages\Xamarin.Firebase.iOS.CloudMessaging.2.0.4\build\Xamarin.Firebase.iOS.CloudMessaging.targets')" />
+  <Import Project="..\packages\Xamarin.Firebase.iOS.InstanceID.2.0.0\build\Xamarin.Firebase.iOS.InstanceID.targets" Condition="Exists('..\packages\Xamarin.Firebase.iOS.InstanceID.2.0.0\build\Xamarin.Firebase.iOS.InstanceID.targets')" />
+  <Import Project="..\packages\Xamarin.Firebase.iOS.Analytics.4.0.2\build\Xamarin.Firebase.iOS.Analytics.targets" Condition="Exists('..\packages\Xamarin.Firebase.iOS.Analytics.4.0.2\build\Xamarin.Firebase.iOS.Analytics.targets')" />
+  <Import Project="..\packages\Xamarin.Firebase.iOS.CloudMessaging.2.0.0\build\Xamarin.Firebase.iOS.CloudMessaging.targets" Condition="Exists('..\packages\Xamarin.Firebase.iOS.CloudMessaging.2.0.0\build\Xamarin.Firebase.iOS.CloudMessaging.targets')" />
+  <Import Project="..\packages\Xamarin.Build.Download.0.4.9\build\Xamarin.Build.Download.targets" Condition="Exists('..\packages\Xamarin.Build.Download.0.4.9\build\Xamarin.Build.Download.targets')" />
+  <Import Project="..\packages\Xamarin.Build.Download.0.4.6\build\Xamarin.Build.Download.targets" Condition="Exists('..\packages\Xamarin.Build.Download.0.4.6\build\Xamarin.Build.Download.targets')" />
+  <Import Project="..\packages\Xamarin.Firebase.iOS.Core.4.0.8\build\Xamarin.Firebase.iOS.Core.targets" Condition="Exists('..\packages\Xamarin.Firebase.iOS.Core.4.0.8\build\Xamarin.Firebase.iOS.Core.targets')" />
+  <Import Project="..\packages\Xamarin.Firebase.iOS.InstanceID.2.0.4\build\Xamarin.Firebase.iOS.InstanceID.targets" Condition="Exists('..\packages\Xamarin.Firebase.iOS.InstanceID.2.0.4\build\Xamarin.Firebase.iOS.InstanceID.targets')" />
+</Project>

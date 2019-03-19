@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <item
+    android:orderInCategory="0"
+    android:id="@+id/map_item"
+    android:enabled="true"
+    android:icon="@mipmap/map"
+    android:title="@string/map"
+    app:showAsAction="always" />
+
+  <item
+    android:orderInCategory="1"
+    android:id="@+id/notification_item"
+    android:enabled="true"
+    android:title="@string/news"
+    android:icon="@mipmap/notification"
+    app:showAsAction="always" />
+
+  <item
+    android:orderInCategory="2"
+    android:id="@+id/messages_item"
+    android:enabled="true"
+    android:title="@string/inbox"
+    android:icon="@mipmap/message"
+    app:showAsAction="always" />
+
+  <item
+    android:orderInCategory="3"
+    android:id="@+id/configuration_item"
+    android:enabled="true"
+    android:title="@string/configuration"
+    android:icon="@mipmap/user"
+    app:showAsAction="always" />
+</menu>

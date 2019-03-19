@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Zorbek.Core.Security.Client" Version="2.0.9-preview" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LumoTrack.DTO\LumoTrack.DTO.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Kuktrack.Integrations.DTO">
+      <HintPath>..\Lib\Kuktrack.Integrations.DTO.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

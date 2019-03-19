@@ -1,0 +1,24 @@
+<resources>
+  <string name="app_name">Sigue Tu Camión</string>
+  <string name="title_home">Home</string>
+  <string name="title_dashboard">Dashboard</string>
+  <string name="title_notifications">Notifications</string>
+  <string name="mail">Buzón de comentarios</string>
+  <string name="careYourOpinion">Nos importa mucho tu opinión, compártenos tus dudas, comentarios y sugerencias</string>
+  <string name="truck">Camión</string>
+  <string name="category">Categoría</string>
+  <string name="message">Mensaje</string>
+  <string name="sendMessage">Enviar mensaje</string>
+  <string name="configuration">Configurar</string>
+  <string name="pushNotification">Recibir notificaciones</string>
+  <string name="map">Mapa</string>
+  <string name="news">Avisos</string>
+  <string name="inbox">Buzón</string>
+  <string name="messageSent">Mensaje enviado</string>
+  <string name="thankyou">¡Gracias por hacernos crecer!</string>
+  <string name="important">Importante</string>
+  <string name="LumoContact">
+    Sigue tu camión ©️ 2019, Todos los derechos reservados.
+  </string>
+  <string name="Contact"></string>
+</resources>

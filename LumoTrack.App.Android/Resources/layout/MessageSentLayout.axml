@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="@color/Background">
+	<LinearLayout
+		android:id="@+id/messageSendLinearLayout"
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_margin="20dp">
+		<ImageView
+			android:src="@mipmap/messagesent"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_gravity="center"
+			android:scaleType="fitCenter"/>
+	</LinearLayout>
+</LinearLayout>

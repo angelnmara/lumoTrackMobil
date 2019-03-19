@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LumoTrack.App.iOS", "LumoTrack.App.iOS.csproj", "{9BEE6E19-CFA3-4E85-944E-8CA79C2434EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhone = Debug|iPhone
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9BEE6E19-CFA3-4E85-944E-8CA79C2434EC}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{9BEE6E19-CFA3-4E85-944E-8CA79C2434EC}.Debug|iPhone.Build.0 = Debug|iPhone
+		{9BEE6E19-CFA3-4E85-944E-8CA79C2434EC}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{9BEE6E19-CFA3-4E85-944E-8CA79C2434EC}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{9BEE6E19-CFA3-4E85-944E-8CA79C2434EC}.Release|iPhone.ActiveCfg = Release|iPhone
+		{9BEE6E19-CFA3-4E85-944E-8CA79C2434EC}.Release|iPhone.Build.0 = Release|iPhone
+		{9BEE6E19-CFA3-4E85-944E-8CA79C2434EC}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{9BEE6E19-CFA3-4E85-944E-8CA79C2434EC}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A4C2FC0E-5F63-4BB2-BD78-620AD98DD87D}
+	EndGlobalSection
+EndGlobal

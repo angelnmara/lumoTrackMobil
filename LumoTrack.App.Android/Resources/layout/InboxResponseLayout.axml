@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+	<LinearLayout
+		android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+	android:layout_marginLeft="50dp"
+	android:layout_marginRight="50dp"
+	android:layout_marginTop="7.5dp"
+	android:layout_marginBottom="7.5dp"
+	android:background="@drawable/TableBox">
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginTop="30dp"
+		android:layout_marginRight="20dp"
+		android:layout_marginLeft="20dp">
+		<TextView 
+			android:id="@+id/inboxDate"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textColor="@color/mainColor"
+			android:gravity="right"
+			android:text="8 Nov"/>
+		<TextView 
+			android:id="@+id/inboxTitle"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textColor="@color/white"
+			android:textSize="16sp"
+			android:textStyle="bold|normal"
+			android:text="Lorem Ipsum"/>
+
+		<TextView 
+			android:id="@+id/inboxMessage"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:textColor="@color/white"
+			android:text="mensaje"/>
+		</LinearLayout>
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginLeft="50dp"
+		android:layout_marginRight="50dp">
+		<View
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+			android:layout_marginBottom="20dp"
+            android:background="@color/white"/>
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/ResponseLayout"
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:visibility="gone"
+		android:layout_marginRight="30dp"
+		android:layout_marginLeft="30dp"
+		android:layout_marginBottom="30dp">
+		<TextView 
+			android:id="@+id/inboxresponseDateId"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textColor="@color/mainColor"
+			android:gravity="right"
+			android:text="10 Nov"/>
+		<TextView 
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textColor="@color/white"
+			android:textSize="16sp"
+			android:textStyle="bold|normal"
+			android:text="Respuesta"/>
+
+		<TextView 
+			android:id="@+id/inboxResponseId"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="15dp"
+			android:textColor="@color/white"
+			android:text="Mensaje"/>
+		</LinearLayout>
+	</LinearLayout>
+
+</LinearLayout>
