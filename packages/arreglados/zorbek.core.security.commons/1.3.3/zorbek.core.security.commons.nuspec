@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Zorbek.Core.Security.Commons</id>
+    <version>1.3.3</version>
+    <authors>alfonso.paredes@zorbek.com,alfonso.ramos@zorbek.com</authors>
+    <owners>alfonso.paredes@zorbek.com,alfonso.ramos@zorbek.com</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package Description</description>
+    <copyright>Zorbek</copyright>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="System.Net.Http" version="4.3.3" exclude="Build,Analyzers" />
+        <dependency id="Zorbek.Essentials.Std.Utilities" version="1.1.2" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

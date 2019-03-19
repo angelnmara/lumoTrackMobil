@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Zorbek.Core.Security.Client</id>
+    <version>2.0.9-preview</version>
+    <authors>andres.wong@zorbek.com,alfonso.paredes.zorbek.com,mario.diaz@zorbek.com, alfonso.ramos@zorbek.com</authors>
+    <owners>andres.wong@zorbek.com,alfonso.paredes.zorbek.com,mario.diaz@zorbek.com, alfonso.ramos@zorbek.com</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Proxy para consumir el servicio de seguridad</description>
+    <copyright>Zorbek 2018</copyright>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Zorbek.Core.Security.Commons" version="1.3.3" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNet.WebApi.Client" version="5.2.6" exclude="Build,Analyzers" />
+        <dependency id="System.Net.Http" version="4.3.3" exclude="Build,Analyzers" />
+        <dependency id="Zorbek.Essentials.Clients" version="1.1.4" exclude="Build,Analyzers" />
+        <dependency id="Zorbek.Essentials.Std.Utilities" version="1.1.2" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>
