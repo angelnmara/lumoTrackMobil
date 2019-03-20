@@ -16,7 +16,7 @@
 			android:layout_weight="0.35"
 			android:layout_height="match_parent">
 			<ImageView
-				android:id="@+id/siguetucamionIcon"
+				android:id="@+id/mapcenterIcon"
 				android:src="@mipmap/siguetucamion"
 				android:layout_width="match_parent"
 				android:layout_height="45dp"
@@ -49,8 +49,7 @@
 			android:layout_height="match_parent">
 
 		<ImageView
-				android:id="@+id/municipioIcon"
-			android:src="@mipmap/municipio"				
+			android:src="@mipmap/municipio"
 			android:layout_width="match_parent"
 			android:layout_height="45dp"
 			android:layout_margin="5dp"
