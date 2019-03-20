@@ -27,8 +27,8 @@ namespace LumoTrack.App.Android.Fragments
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             View view = inflater.Inflate(Resource.Layout.NavBarFragment, container);
-            ImageView imageView = view.FindViewById<ImageView>(Resource.Id.mapcenterIcon);
-            imageView.SetImageResource(Resource.Mipmap.TruckPin); 
+            ImageView imageView = view.FindViewById<ImageView>(Resource.Id.siguetucamionIcon);
+            imageView.SetImageResource(Resource.Mipmap.TruckPin);
             //_logo = view.FindViewById<ImageView>(Resource.Id.addcomment);
 
             return view;

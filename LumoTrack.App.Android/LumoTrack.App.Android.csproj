@@ -319,6 +319,7 @@
     <AndroidResource Include="Resources\drawable\iconapp.png" />
     <AndroidResource Include="Resources\drawable\ic_launcher_background.xml" />
     <AndroidResource Include="Resources\drawable\nav_item_color.xml" />
+    <AndroidResource Include="Resources\drawable\backgrounditemPRD.xml" />
     <Content Include="Resources\drawable\Splashscreen.xml">
       <SubType>Designer</SubType>
     </Content>
