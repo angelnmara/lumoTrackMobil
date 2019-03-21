@@ -61,9 +61,11 @@ namespace LumoTrack.App.Android
 
             SetContentView(Resource.Layout.Main);
 
-            SetColorToActionBar();
+            SetColorToActionBar();            
 
             navigationView = FindViewById<BottomNavigationView>(Resource.Id.bottom_navigation);
+
+            navigationView.SetBackgroundColor(Color.ParseColor("#ffff4d"));
 
             LoadElement();
 

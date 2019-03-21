@@ -60,6 +60,15 @@ namespace LumoTrack.App.Android.Fragments
         {
             _view = inflater.Inflate(Resource.Layout.NewsLayout, container, false);
 
+            /*  Realizar cambios dinamicos  */
+
+            LinearLayout lnlNews = _view.FindViewById<LinearLayout>(Resource.Id.lnlNews);
+            lnlNews.SetBackgroundColor(Color.ParseColor("#ffff4d"));
+            TextView txtNews = _view.FindViewById<TextView>(Resource.Id.txtVNews);
+            txtNews.SetTextColor(Color.Black);
+
+            /*  Realizar cambios dinamicos  */
+
             _lottieAnimation = _view.FindViewById<LinearLayout>(Resource.Id.animation_view);
             _lottieAnimation.Visibility = ViewStates.Visible;
 

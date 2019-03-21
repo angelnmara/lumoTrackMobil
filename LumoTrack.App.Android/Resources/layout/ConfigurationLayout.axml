@@ -5,11 +5,13 @@
     android:layout_height="match_parent"
 	android:background="@mipmap/bg">
 	<LinearLayout
+		android:id="@+id/lnlConfigurar"
 		android:orientation="vertical"
 		android:layout_width="match_parent"
 		android:layout_height="60dp"
 		android:background="@color/mainColor">
 		<TextView
+			android:id="@+id/txtConfigurar"
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"
 			android:layout_marginLeft="20sp"

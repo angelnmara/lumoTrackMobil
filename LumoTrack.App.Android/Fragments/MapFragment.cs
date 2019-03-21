@@ -86,12 +86,23 @@ namespace LumoTrack.App.Android.Fragments
             BasicProxiesFactory = new BasicProxiesFactory();
             InitTimer();
             MarkerOptionsArray = new List<MarkerOptions>();
-
         }
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             _view = inflater.Inflate(Resource.Layout.MapLayout, container, false);
+            /*  Realizar cambios dinamicos  */
+
+            var lnbar = _view.FindViewById(Resource.Id.lnlBar);
+            TextView txtTitulo = _view.FindViewById<TextView>(Resource.Id.txtVTitulo);
+            lnbar.SetBackgroundColor(Color.ParseColor("#ffff4d"));
+            txtTitulo.SetTextColor(Color.Black);
+            ImageView centerIcon = _view.FindViewById<ImageView>(Resource.Id.iconCenter);
+            centerIcon.SetColorFilter(Color.Black);
+            ImageView iconRefresh = _view.FindViewById<ImageView>(Resource.Id.iconRefresh);
+            iconRefresh.SetColorFilter(Color.Black);
+
+            /*  Realizar cambios dinamicos  */
             _lottieAnimation = _view.FindViewById<LinearLayout>(Resource.Id.animation_view);
             _lottieAnimation.Visibility = ViewStates.Visible;
             return _view;

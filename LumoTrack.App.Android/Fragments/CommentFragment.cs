@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Android.App;
 using Android.Content;
+using Android.Graphics;
 using Android.OS;
 using Android.Runtime;
 using Android.Util;
@@ -76,6 +77,15 @@ namespace LumoTrack.App.Android.Fragments
         {
             _view = inflater.Inflate(Resource.Layout.CommentLayout, container, false);
 
+            /*  Realizar cambios dinamicos  */
+
+            LinearLayout lnlMail = _view.FindViewById<LinearLayout>(Resource.Id.lnlMail);
+            lnlMail.SetBackgroundColor(Color.ParseColor("#ffff4d"));
+            TextView txtMail = _view.FindViewById<TextView>(Resource.Id.txtMail);
+            txtMail.SetTextColor(Color.Black);
+
+            /*  Realizar cambios dinamicos  */
+
             _lottieAnimation = _view.FindViewById<LinearLayout>(Resource.Id.animation_view);
             _commentView = _view.FindViewById<ScrollView>(Resource.Id.commentLayout);
 
@@ -144,6 +154,14 @@ namespace LumoTrack.App.Android.Fragments
             _messageText.SetOnTouchListener(new EditTextTouchListener());
 
             _sendButton = _view.FindViewById<Button>(Resource.Id.SendButton);
+
+            /*  Realizar cambios dinamicos  */
+
+            _sendButton.SetBackgroundColor(Color.ParseColor("#ffff4d"));
+            _sendButton.SetTextColor(Color.Black);
+
+            /*  Realizar cambios dinamicos  */
+
             _sendButton.Click += SendButtonOnClick;
         }
 

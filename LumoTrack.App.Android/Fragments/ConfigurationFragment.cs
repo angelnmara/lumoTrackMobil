@@ -14,8 +14,9 @@ using Android.Widget;
 using LumoTrack.Proxy;
 using v4 = Android.Support.V4.App;
 using Android.Support.V4.Content;
-using System.Drawing;
+//using System.Drawing;
 using Android.Content.Res;
+using Android.Graphics;
 
 namespace LumoTrack.App.Android.Fragments
 {
@@ -48,6 +49,15 @@ namespace LumoTrack.App.Android.Fragments
         {
             _view = inflater.Inflate(Resource.Layout.ConfigurationLayout, container, false);
 
+            /*  Realizar cambios dinamicos  */
+
+            LinearLayout lnlConfigurar = _view.FindViewById<LinearLayout>(Resource.Id.lnlConfigurar);
+            lnlConfigurar.SetBackgroundColor(Color.ParseColor("#ffff4d"));
+            TextView txtConfigurar = _view.FindViewById<TextView>(Resource.Id.txtConfigurar);
+            txtConfigurar.SetTextColor(Color.Black);
+
+            /*  Realizar cambios dinamicos  */
+
             return _view;
         }
 
@@ -72,7 +82,13 @@ namespace LumoTrack.App.Android.Fragments
 
             StateListDrawable thumbStates = new StateListDrawable();
             int white = ContextCompat.GetColor(Activity, Resource.Color.white);
-            int mainColor = ContextCompat.GetColor(Activity, Resource.Color.mainColor);
+
+            /*  Realizar cambios dinamicos  */
+
+            int mainColor = ContextCompat.GetColor(Activity, Resource.Color.mainColorPRD);
+
+            /*  Realizar cambios dinamicos  */
+
             int defaultColor = ContextCompat.GetColor(Activity, Resource.Color.grey);
 
             ColorStateList thumbStateColor = new ColorStateList(

@@ -29,11 +29,13 @@
 	    android:layout_width="match_parent"
 		android:layout_height="match_parent">
 		<LinearLayout
+			android:id="@+id/lnlComentarios"	
 			android:orientation="horizontal"
 			android:layout_width="match_parent"
 			android:layout_height="60dp"
 			android:background="@color/mainColor">
 			<TextView
+				android:id="@+id/txtMail"
 				android:layout_height="match_parent"
 				android:layout_width="0dp"
 				android:layout_weight="0.8"
@@ -48,6 +50,7 @@
 				android:layout_height="match_parent"
 				android:layout_weight="0.2">
 				<TextView 
+					android:id="@+id/txtMas"	
 					android:layout_width="match_parent"
 					android:layout_height="match_parent"
 					android:textColor="@color/white"

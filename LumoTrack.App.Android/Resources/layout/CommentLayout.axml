@@ -23,10 +23,12 @@
 			app:lottie_autoPlay="true" />
 	</LinearLayout>
 	<LinearLayout
+		android:id="@+id/lnlMail"
 		android:layout_width="match_parent"
 		android:layout_height="60dp"
 		android:background="@color/mainColor">
 		<TextView
+			android:id="@+id/txtMail"
 			android:layout_height="match_parent"
 			android:layout_width="match_parent"
 			android:layout_marginLeft="20sp"

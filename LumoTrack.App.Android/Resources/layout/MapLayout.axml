@@ -25,6 +25,7 @@
 		android:layout_width="match_parent"
         android:layout_height="match_parent">
 		<LinearLayout
+			android:id="@+id/lnlBar"
 			android:orientation="horizontal"
 			android:layout_width="match_parent"
 			android:layout_height="60dp"
@@ -35,6 +36,7 @@
 				android:layout_weight="0.35"
 				android:layout_height="match_parent">
 			<TextView
+				android:id="@+id/txtVTitulo"		
 				android:layout_width="match_parent"
 				android:layout_height="match_parent"
 				android:layout_marginLeft="20sp"
@@ -54,6 +56,7 @@
 					android:layout_height="match_parent"
 					android:layout_weight="0.5">
 					<ImageView
+						android:id="@+id/iconCenter"	
 						android:src="@mipmap/center"
 						android:layout_width="match_parent"
 						android:layout_height="30dp"
@@ -66,6 +69,7 @@
 					android:layout_height="match_parent"
 					android:layout_weight="0.5">
 					<ImageView
+						android:id="@+id/iconRefresh"
 						android:src="@mipmap/refresh"
 						android:layout_width="match_parent"
 						android:layout_height="30dp"

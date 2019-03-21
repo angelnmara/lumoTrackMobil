@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Android.App;
 using Android.Content;
+using Android.Graphics;
 using Android.OS;
 using Android.Runtime;
 using Android.Util;
@@ -46,6 +47,17 @@ namespace LumoTrack.App.Android.Fragments
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             _view = inflater.Inflate(Resource.Layout.InboxLayout, container, false);
+
+            /*  Realizar cambios dinamicos  */
+
+            LinearLayout lnlComentarios = _view.FindViewById<LinearLayout>(Resource.Id.lnlComentarios);
+            lnlComentarios.SetBackgroundColor(Color.ParseColor("#ffff4d"));
+            TextView txtMail = _view.FindViewById<TextView>(Resource.Id.txtMail);
+            txtMail.SetTextColor(Color.Black);
+            TextView txtMas = _view.FindViewById<TextView>(Resource.Id.txtMas);
+            txtMas.SetTextColor(Color.Black);
+
+            /*  Realizar cambios dinamicos  */
 
             _lottieAnimation = _view.FindViewById<LinearLayout>(Resource.Id.animation_view);
             _lottieAnimation.Visibility = ViewStates.Visible;
@@ -107,29 +119,31 @@ namespace LumoTrack.App.Android.Fragments
 
         private void LoadElements()
         {
+            try {
+                if (_inboxList != null && _inboxList.Any())
+                {
+                    _inboxListView = _view.FindViewById<ListView>(Resource.Id.inboxListView);
 
+                    var notificationAdapter = new InboxAdapter(Activity, _inboxList);
 
-            if (_inboxList != null && _inboxList.Any())
-            {
-                _inboxListView = _view.FindViewById<ListView>(Resource.Id.inboxListView);
+                    var inboxLayout = _view.FindViewById<LinearLayout>(Resource.Id.inboxListLayout);
+                    inboxLayout.Visibility = ViewStates.Visible;
+                    _lottieAnimation.Visibility = ViewStates.Gone;
 
-                var notificationAdapter = new InboxAdapter(Activity, _inboxList);
-
-                var inboxLayout = _view.FindViewById<LinearLayout>(Resource.Id.inboxListLayout);
-                inboxLayout.Visibility = ViewStates.Visible;
-                _lottieAnimation.Visibility = ViewStates.Gone;
-
-                _inboxListView.Adapter = notificationAdapter;
-                notificationAdapter.NotifyDataSetChanged();
+                    _inboxListView.Adapter = notificationAdapter;
+                    notificationAdapter.NotifyDataSetChanged();
+                }
+                else
+                {
+                    _emptyState = _view.FindViewById<LinearLayout>(Resource.Id.empty_state);
+                    _emptyState.Visibility = ViewStates.Visible;
+                    _lottieAnimation.Visibility = ViewStates.Gone;
+                }
+                _lottieAnimation.Dispose();
+                GarbageCollector();
+            } catch (Exception ex) {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
             }
-            else
-            {
-                _emptyState = _view.FindViewById<LinearLayout>(Resource.Id.empty_state);
-                _emptyState.Visibility = ViewStates.Visible;
-                _lottieAnimation.Visibility = ViewStates.Gone;
-            }
-            _lottieAnimation.Dispose();
-            GarbageCollector();
         }
 
         private void AddComment_OnClick(object sender, EventArgs e)
