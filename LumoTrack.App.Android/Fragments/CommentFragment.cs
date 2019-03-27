@@ -80,7 +80,7 @@ namespace LumoTrack.App.Android.Fragments
             /*  Realizar cambios dinamicos  */
 
             LinearLayout lnlMail = _view.FindViewById<LinearLayout>(Resource.Id.lnlMail);
-            lnlMail.SetBackgroundColor(Color.ParseColor("#ffff4d"));
+            lnlMail.SetBackgroundColor(Color.ParseColor("#ffcb01"));
             TextView txtMail = _view.FindViewById<TextView>(Resource.Id.txtMail);
             txtMail.SetTextColor(Color.Black);
 
@@ -157,7 +157,7 @@ namespace LumoTrack.App.Android.Fragments
 
             /*  Realizar cambios dinamicos  */
 
-            _sendButton.SetBackgroundColor(Color.ParseColor("#ffff4d"));
+            _sendButton.SetBackgroundColor(Color.ParseColor("#ffcb01"));
             _sendButton.SetTextColor(Color.Black);
 
             /*  Realizar cambios dinamicos  */

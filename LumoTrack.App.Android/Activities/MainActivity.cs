@@ -1,34 +1,16 @@
-﻿using Android;
-using Android.App;
-using Android.Gms.Maps;
-using Android.Gms.Maps.Model;
+﻿using Android.App;
 using Android.Graphics;
 using Android.OS;
-using Android.Runtime;
 using Android.Support.Design.Widget;
 using Android.Support.V7.App;
 using Android.Views;
 using Android.Widget;
-using Android.Gms.Location;
-using System.Threading.Tasks;
 using Android.Content.PM;
-using Android.Locations;
-
-using AlertDialog = Android.App.AlertDialog;
 using System;
 using LumoTrack.App.Android.Helpers;
-using Android.Gms.Common;
-using Firebase.Messaging;
-using Firebase.Iid;
-using Android.Util;
 using v4 = Android.Support.V4.App;
 using Android.Support.Design.Internal;
 using Android.Support.V4.Content;
-using System.Globalization;
-using Android.Content.Res;
-using Java.Util;
-using Android.Preferences;
-using static Android.App.ActivityManager;
 using Android.Content;
 
 namespace LumoTrack.App.Android
@@ -65,7 +47,7 @@ namespace LumoTrack.App.Android
 
             navigationView = FindViewById<BottomNavigationView>(Resource.Id.bottom_navigation);
 
-            navigationView.SetBackgroundColor(Color.ParseColor("#ffff4d"));
+            navigationView.SetBackgroundColor(Color.ParseColor("#ffcb01"));
 
             LoadElement();
 

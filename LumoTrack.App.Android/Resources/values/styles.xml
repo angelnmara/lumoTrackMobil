@@ -43,8 +43,7 @@
   <style name="txt_md">
     <item name="android:fontFamily">sans-serif</item>
     <item name="android:textSize">26sp</item>
-  </style>
-
+  </style>  
 
   <!-- Spinner Style-->
 

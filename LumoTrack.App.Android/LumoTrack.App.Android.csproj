@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
     <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
     <AndroidLinkMode>None</AndroidLinkMode>
-    <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
+    <EmbedAssembliesIntoApk>false</EmbedAssembliesIntoApk>
     <AotAssemblies>false</AotAssemblies>
     <EnableLLVM>false</EnableLLVM>
     <BundleAssemblies>false</BundleAssemblies>
@@ -403,6 +403,52 @@
     <AndroidResource Include="Resources\mipmap-hdpi\lumonotificationicon.png" />
     <AndroidResource Include="Resources\mipmap-xhdpi\lumonotificationicon.png" />
     <AndroidResource Include="Resources\mipmap-xxhdpi\People.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\SigueTuCamionPRD.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\MunicipioTultepec.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\TruckPinPRD.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\UserPinPRD.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\MessageSentPRD.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\ES_NotificationPRD.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\bgPRD.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\ES_MessagePRD.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\SplashscreenPRD.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\SplashscreenPRD.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\SplashscreenPRD.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\SplashcreenPRD.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\SplashscreenPRD.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\UserPinPRD.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ES_MessagePRD.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ES_NotificationPRD.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_launcher_iconPRD.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_launcherPRD.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\MessageSentPRD.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\MunicipioTultepec.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\SigueTuCamionPRD.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\TruckPinPRD.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\UserPinPRD.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\ES_MessagePRD.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\ES_NotificationPRD.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\ic_launcher_iconPRD.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\ic_launcherPRD.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\MessageSentPRD.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\MunicipioTultepec.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\TruckPinPRD.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\UserPinPRD.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\ES_MessagePRD.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\ES_NotificationPRD.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\ic_launcherPRD.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\MessageSentPRD.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\SigueTuCamionPRD.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\TruckPinPRD.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\UserPinPRD.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ES_MessagePRD.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ES_NotificationPRD.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_launcher_iconPRD.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_launcherPRD.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\MessageSentPRD.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\MunicipioTultepec.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\SigueTuCamionPRD.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\TruckPinPRD.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

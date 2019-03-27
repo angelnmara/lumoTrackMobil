@@ -27,8 +27,18 @@ namespace LumoTrack.App.Android.Fragments
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             View view = inflater.Inflate(Resource.Layout.NavBarFragment, container);
-            ImageView imageView = view.FindViewById<ImageView>(Resource.Id.mapcenterIcon);
-            imageView.SetImageResource(Resource.Mipmap.TruckPin); 
+
+            /*  Realizar cambios dinamicos  */
+
+            ImageView imageViewSigueTuCamion = view.FindViewById<ImageView>(Resource.Id.mapcenterIcon);
+            imageViewSigueTuCamion.SetImageResource(Resource.Mipmap.SigueTuCamionPRD);
+
+            /*Por municipio*/
+            ImageView imageViewMunicipio = view.FindViewById<ImageView>(Resource.Id.imgMunicipio);
+            imageViewMunicipio.SetImageResource(Resource.Mipmap.MunicipioTultepec);
+
+            /*  Realizar cambios dinamicos  */
+
             //_logo = view.FindViewById<ImageView>(Resource.Id.addcomment);
 
             return view;

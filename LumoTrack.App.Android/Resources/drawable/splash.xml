@@ -5,7 +5,8 @@
   </item>
   <item>
     <bitmap
-        android:src="@mipmap/splashscreen"
+      android:id="@+id/bitpamSplash"
+        android:src="@mipmap/splashscreenprd"
         android:tileMode="disabled"
         android:gravity="fill"/>
   </item>

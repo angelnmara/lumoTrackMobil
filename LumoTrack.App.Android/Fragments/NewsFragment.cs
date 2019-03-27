@@ -63,9 +63,11 @@ namespace LumoTrack.App.Android.Fragments
             /*  Realizar cambios dinamicos  */
 
             LinearLayout lnlNews = _view.FindViewById<LinearLayout>(Resource.Id.lnlNews);
-            lnlNews.SetBackgroundColor(Color.ParseColor("#ffff4d"));
+            lnlNews.SetBackgroundColor(Color.ParseColor("#ffcb01"));
             TextView txtNews = _view.FindViewById<TextView>(Resource.Id.txtVNews);
             txtNews.SetTextColor(Color.Black);
+            LinearLayout lnlBG = _view.FindViewById<LinearLayout>(Resource.Id.lnlBG);
+            lnlBG.SetBackgroundResource(Resource.Mipmap.bgPRD);
 
             /*  Realizar cambios dinamicos  */
 
@@ -161,6 +163,14 @@ namespace LumoTrack.App.Android.Fragments
             else
             {
                 _emptyState = _view.FindViewById<LinearLayout>(Resource.Id.empty_state);
+
+                /*  Realizar cambios dinamicos  */
+
+                ImageView imgNotificacion = _emptyState.FindViewById<ImageView>(Resource.Id.imgNotificacion);
+                imgNotificacion.SetImageResource(Resource.Mipmap.ES_NotificationPRD);
+
+                /*  Realizar cambios dinamicos  */
+
                 _emptyState.Visibility = ViewStates.Visible;
                 _lottieAnimation.Visibility = ViewStates.Gone;
             }

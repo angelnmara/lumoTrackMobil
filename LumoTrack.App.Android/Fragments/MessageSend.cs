@@ -28,6 +28,14 @@ namespace LumoTrack.App.Android.Fragments
             var view = inflater.Inflate(Resource.Layout.MessageSentLayout, container, false);
 
             _acceptButton = view.FindViewById<LinearLayout>(Resource.Id.messageSendLinearLayout);
+
+            /*  Realizar cambios dinamicos  */
+
+            ImageView imgMessageSend = _acceptButton.FindViewById<ImageView>(Resource.Id.imgMessageSent);
+            imgMessageSend.SetImageResource(Resource.Mipmap.MessageSentPRD);
+
+            /*  Realizar cambios dinamicos  */
+
             _acceptButton.Click += AcceptButtonOnClick;
 
             return view;

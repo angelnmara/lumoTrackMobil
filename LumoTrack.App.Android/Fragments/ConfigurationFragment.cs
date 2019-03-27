@@ -51,8 +51,10 @@ namespace LumoTrack.App.Android.Fragments
 
             /*  Realizar cambios dinamicos  */
 
+            LinearLayout lnlBg = _view.FindViewById<LinearLayout>(Resource.Id.lnlBg);
+            lnlBg.SetBackgroundResource(Resource.Mipmap.bgPRD);
             LinearLayout lnlConfigurar = _view.FindViewById<LinearLayout>(Resource.Id.lnlConfigurar);
-            lnlConfigurar.SetBackgroundColor(Color.ParseColor("#ffff4d"));
+            lnlConfigurar.SetBackgroundColor(Color.ParseColor("#ffcb01"));
             TextView txtConfigurar = _view.FindViewById<TextView>(Resource.Id.txtConfigurar);
             txtConfigurar.SetTextColor(Color.Black);
 

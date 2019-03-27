@@ -51,7 +51,7 @@ namespace LumoTrack.App.Android.Fragments
             /*  Realizar cambios dinamicos  */
 
             LinearLayout lnlComentarios = _view.FindViewById<LinearLayout>(Resource.Id.lnlComentarios);
-            lnlComentarios.SetBackgroundColor(Color.ParseColor("#ffff4d"));
+            lnlComentarios.SetBackgroundColor(Color.ParseColor("#ffcb01"));
             TextView txtMail = _view.FindViewById<TextView>(Resource.Id.txtMail);
             txtMail.SetTextColor(Color.Black);
             TextView txtMas = _view.FindViewById<TextView>(Resource.Id.txtMas);
@@ -127,6 +127,13 @@ namespace LumoTrack.App.Android.Fragments
                     var notificationAdapter = new InboxAdapter(Activity, _inboxList);
 
                     var inboxLayout = _view.FindViewById<LinearLayout>(Resource.Id.inboxListLayout);
+
+                    /*  Realizar cambios dinamicos  */
+
+                    inboxLayout.SetBackgroundResource(Resource.Mipmap.bgPRD);
+
+                    /*  Realizar cambios dinamicos  */
+
                     inboxLayout.Visibility = ViewStates.Visible;
                     _lottieAnimation.Visibility = ViewStates.Gone;
 
@@ -136,6 +143,14 @@ namespace LumoTrack.App.Android.Fragments
                 else
                 {
                     _emptyState = _view.FindViewById<LinearLayout>(Resource.Id.empty_state);
+
+                    /*  Realizar cambios dinamicos  */
+
+                    ImageView imgMessage = _emptyState.FindViewById<ImageView>(Resource.Id.imgMessage);
+                    imgMessage.SetBackgroundResource(Resource.Mipmap.ES_MessagePRD);
+
+                    /*  Realizar cambios dinamicos  */
+
                     _emptyState.Visibility = ViewStates.Visible;
                     _lottieAnimation.Visibility = ViewStates.Gone;
                 }

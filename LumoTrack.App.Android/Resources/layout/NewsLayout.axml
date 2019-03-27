@@ -45,16 +45,17 @@
 			android:text="@string/news"/>
 		</LinearLayout>
 		<LinearLayout
+			android:id="@+id/lnlBG"
 			android:orientation="vertical"
 			android:layout_width="match_parent"
 			android:layout_height="fill_parent"
 			android:background="@mipmap/bg">
-		<ListView
-			android:id="@+id/notificationListView"
-			android:layout_width="match_parent"
-			android:layout_height="match_parent"
-			android:layout_marginTop="1dp"
-			android:dividerHeight="15dp"/>
+			<ListView
+				android:id="@+id/notificationListView"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_marginTop="1dp"
+				android:dividerHeight="15dp"/>
 		</LinearLayout>
 		<LinearLayout
 			android:id="@+id/empty_state"
@@ -64,6 +65,7 @@
 			android:layout_margin="10dp"
 			android:gravity="center" >
 			<ImageView
+				android:id="@+id/imgNotificacion"
 				android:src="@mipmap/es_notification"
 				android:layout_width="match_parent"
 				android:layout_height="match_parent"

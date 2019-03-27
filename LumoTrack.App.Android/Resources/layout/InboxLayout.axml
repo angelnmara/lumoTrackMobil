@@ -84,6 +84,7 @@
 			android:visibility="gone"
 			android:gravity="center" >
 			<ImageView
+				android:id="@+id/imgMessage"
 				android:src="@mipmap/es_message"
 				android:layout_width="match_parent"
 				android:layout_height="match_parent"

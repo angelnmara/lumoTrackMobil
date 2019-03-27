@@ -2648,11 +2648,11 @@ namespace LumoTrack.App.Android
 			// aapt resource value: 0x7f0b0041
 			public const int META = 2131427393;
 			
-			// aapt resource value: 0x7f0b00c0
-			public const int NavigationBar = 2131427520;
+			// aapt resource value: 0x7f0b00c2
+			public const int NavigationBar = 2131427522;
 			
-			// aapt resource value: 0x7f0b00bd
-			public const int ResponseLayout = 2131427517;
+			// aapt resource value: 0x7f0b00bf
+			public const int ResponseLayout = 2131427519;
 			
 			// aapt resource value: 0x7f0b0042
 			public const int SHIFT = 2131427394;
@@ -2663,8 +2663,8 @@ namespace LumoTrack.App.Android
 			// aapt resource value: 0x7f0b00a1
 			public const int SendButton = 2131427489;
 			
-			// aapt resource value: 0x7f0b00d4
-			public const int action0 = 2131427540;
+			// aapt resource value: 0x7f0b00da
+			public const int action0 = 2131427546;
 			
 			// aapt resource value: 0x7f0b008b
 			public const int action_bar = 2131427467;
@@ -2687,17 +2687,17 @@ namespace LumoTrack.App.Android
 			// aapt resource value: 0x7f0b0069
 			public const int action_bar_title = 2131427433;
 			
-			// aapt resource value: 0x7f0b00d1
-			public const int action_container = 2131427537;
+			// aapt resource value: 0x7f0b00d7
+			public const int action_container = 2131427543;
 			
 			// aapt resource value: 0x7f0b008c
 			public const int action_context_bar = 2131427468;
 			
-			// aapt resource value: 0x7f0b00d8
-			public const int action_divider = 2131427544;
+			// aapt resource value: 0x7f0b00de
+			public const int action_divider = 2131427550;
 			
-			// aapt resource value: 0x7f0b00d2
-			public const int action_image = 2131427538;
+			// aapt resource value: 0x7f0b00d8
+			public const int action_image = 2131427544;
 			
 			// aapt resource value: 0x7f0b0003
 			public const int action_menu_divider = 2131427331;
@@ -2714,11 +2714,11 @@ namespace LumoTrack.App.Android
 			// aapt resource value: 0x7f0b006b
 			public const int action_mode_close_button = 2131427435;
 			
-			// aapt resource value: 0x7f0b00d3
-			public const int action_text = 2131427539;
+			// aapt resource value: 0x7f0b00d9
+			public const int action_text = 2131427545;
 			
-			// aapt resource value: 0x7f0b00e1
-			public const int actions = 2131427553;
+			// aapt resource value: 0x7f0b00e7
+			public const int actions = 2131427559;
 			
 			// aapt resource value: 0x7f0b006c
 			public const int activity_chooser_view_content = 2131427436;
@@ -2726,8 +2726,8 @@ namespace LumoTrack.App.Android
 			// aapt resource value: 0x7f0b0033
 			public const int add = 2131427379;
 			
-			// aapt resource value: 0x7f0b00b5
-			public const int addCommentIcon = 2131427509;
+			// aapt resource value: 0x7f0b00b6
+			public const int addCommentIcon = 2131427510;
 			
 			// aapt resource value: 0x7f0b0023
 			public const int adjust_height = 2131427363;
@@ -2756,23 +2756,26 @@ namespace LumoTrack.App.Android
 			// aapt resource value: 0x7f0b003b
 			public const int beginning = 2131427387;
 			
+			// aapt resource value: 0x7f0b00f4
+			public const int bitpamSplash = 2131427572;
+			
 			// aapt resource value: 0x7f0b0062
 			public const int blocking = 2131427426;
 			
 			// aapt resource value: 0x7f0b0049
 			public const int bottom = 2131427401;
 			
-			// aapt resource value: 0x7f0b00c2
-			public const int bottom_navigation = 2131427522;
+			// aapt resource value: 0x7f0b00c4
+			public const int bottom_navigation = 2131427524;
 			
 			// aapt resource value: 0x7f0b0072
 			public const int buttonPanel = 2131427442;
 			
-			// aapt resource value: 0x7f0b00cb
-			public const int cancelTextView = 2131427531;
+			// aapt resource value: 0x7f0b00ce
+			public const int cancelTextView = 2131427534;
 			
-			// aapt resource value: 0x7f0b00d5
-			public const int cancel_action = 2131427541;
+			// aapt resource value: 0x7f0b00db
+			public const int cancel_action = 2131427547;
 			
 			// aapt resource value: 0x7f0b0050
 			public const int center = 2131427408;
@@ -2786,8 +2789,8 @@ namespace LumoTrack.App.Android
 			// aapt resource value: 0x7f0b0082
 			public const int checkbox = 2131427458;
 			
-			// aapt resource value: 0x7f0b00dd
-			public const int chronometer = 2131427549;
+			// aapt resource value: 0x7f0b00e3
+			public const int chronometer = 2131427555;
 			
 			// aapt resource value: 0x7f0b0059
 			public const int clip_horizontal = 2131427417;
@@ -2801,17 +2804,17 @@ namespace LumoTrack.App.Android
 			// aapt resource value: 0x7f0b009d
 			public const int commentLayout = 2131427485;
 			
-			// aapt resource value: 0x7f0b00f1
-			public const int configuration_item = 2131427569;
+			// aapt resource value: 0x7f0b00f8
+			public const int configuration_item = 2131427576;
 			
-			// aapt resource value: 0x7f0b00a7
-			public const int container = 2131427495;
+			// aapt resource value: 0x7f0b00a8
+			public const int container = 2131427496;
 			
 			// aapt resource value: 0x7f0b0075
 			public const int contentPanel = 2131427445;
 			
-			// aapt resource value: 0x7f0b00a8
-			public const int coordinator = 2131427496;
+			// aapt resource value: 0x7f0b00a9
+			public const int coordinator = 2131427497;
 			
 			// aapt resource value: 0x7f0b007c
 			public const int custom = 2131427452;
@@ -2828,20 +2831,20 @@ namespace LumoTrack.App.Android
 			// aapt resource value: 0x7f0b006f
 			public const int default_activity_button = 2131427439;
 			
-			// aapt resource value: 0x7f0b00aa
-			public const int design_bottom_sheet = 2131427498;
+			// aapt resource value: 0x7f0b00ab
+			public const int design_bottom_sheet = 2131427499;
+			
+			// aapt resource value: 0x7f0b00b2
+			public const int design_menu_item_action_area = 2131427506;
 			
 			// aapt resource value: 0x7f0b00b1
-			public const int design_menu_item_action_area = 2131427505;
+			public const int design_menu_item_action_area_stub = 2131427505;
 			
 			// aapt resource value: 0x7f0b00b0
-			public const int design_menu_item_action_area_stub = 2131427504;
+			public const int design_menu_item_text = 2131427504;
 			
 			// aapt resource value: 0x7f0b00af
-			public const int design_menu_item_text = 2131427503;
-			
-			// aapt resource value: 0x7f0b00ae
-			public const int design_navigation_view = 2131427502;
+			public const int design_navigation_view = 2131427503;
 			
 			// aapt resource value: 0x7f0b002d
 			public const int disableHome = 2131427373;
@@ -2849,14 +2852,14 @@ namespace LumoTrack.App.Android
 			// aapt resource value: 0x7f0b008d
 			public const int edit_query = 2131427469;
 			
-			// aapt resource value: 0x7f0b00b9
-			public const int empty_state = 2131427513;
+			// aapt resource value: 0x7f0b00ba
+			public const int empty_state = 2131427514;
 			
 			// aapt resource value: 0x7f0b003c
 			public const int end = 2131427388;
 			
-			// aapt resource value: 0x7f0b00e3
-			public const int end_padder = 2131427555;
+			// aapt resource value: 0x7f0b00e9
+			public const int end_padder = 2131427561;
 			
 			// aapt resource value: 0x7f0b004b
 			public const int enterAlways = 2131427403;
@@ -2888,8 +2891,8 @@ namespace LumoTrack.App.Android
 			// aapt resource value: 0x7f0b0063
 			public const int forever = 2131427427;
 			
-			// aapt resource value: 0x7f0b00c1
-			public const int fragments_container = 2131427521;
+			// aapt resource value: 0x7f0b00c3
+			public const int fragments_container = 2131427523;
 			
 			// aapt resource value: 0x7f0b000a
 			public const int ghost_view = 2131427338;
@@ -2906,14 +2909,14 @@ namespace LumoTrack.App.Android
 			// aapt resource value: 0x7f0b0071
 			public const int icon = 2131427441;
 			
-			// aapt resource value: 0x7f0b00c6
-			public const int iconCenter = 2131427526;
-			
 			// aapt resource value: 0x7f0b00c8
-			public const int iconRefresh = 2131427528;
+			public const int iconCenter = 2131427528;
 			
-			// aapt resource value: 0x7f0b00e2
-			public const int icon_group = 2131427554;
+			// aapt resource value: 0x7f0b00ca
+			public const int iconRefresh = 2131427530;
+			
+			// aapt resource value: 0x7f0b00e8
+			public const int icon_group = 2131427560;
 			
 			// aapt resource value: 0x7f0b0025
 			public const int icon_only = 2131427365;
@@ -2924,35 +2927,47 @@ namespace LumoTrack.App.Android
 			// aapt resource value: 0x7f0b006e
 			public const int image = 2131427438;
 			
-			// aapt resource value: 0x7f0b00e7
-			public const int importantMessage = 2131427559;
+			// aapt resource value: 0x7f0b00bb
+			public const int imgMessage = 2131427515;
 			
-			// aapt resource value: 0x7f0b00ba
-			public const int inboxDate = 2131427514;
+			// aapt resource value: 0x7f0b00cd
+			public const int imgMessageSent = 2131427533;
 			
-			// aapt resource value: 0x7f0b00b3
-			public const int inboxLayoutId = 2131427507;
+			// aapt resource value: 0x7f0b00d0
+			public const int imgMunicipio = 2131427536;
 			
-			// aapt resource value: 0x7f0b00b7
-			public const int inboxListLayout = 2131427511;
+			// aapt resource value: 0x7f0b00d6
+			public const int imgNotificacion = 2131427542;
 			
-			// aapt resource value: 0x7f0b00b8
-			public const int inboxListView = 2131427512;
+			// aapt resource value: 0x7f0b00ed
+			public const int importantMessage = 2131427565;
 			
 			// aapt resource value: 0x7f0b00bc
-			public const int inboxMessage = 2131427516;
+			public const int inboxDate = 2131427516;
 			
-			// aapt resource value: 0x7f0b00bf
-			public const int inboxResponseId = 2131427519;
+			// aapt resource value: 0x7f0b00b4
+			public const int inboxLayoutId = 2131427508;
 			
-			// aapt resource value: 0x7f0b00bb
-			public const int inboxTitle = 2131427515;
+			// aapt resource value: 0x7f0b00b8
+			public const int inboxListLayout = 2131427512;
+			
+			// aapt resource value: 0x7f0b00b9
+			public const int inboxListView = 2131427513;
 			
 			// aapt resource value: 0x7f0b00be
-			public const int inboxresponseDateId = 2131427518;
+			public const int inboxMessage = 2131427518;
 			
-			// aapt resource value: 0x7f0b00de
-			public const int info = 2131427550;
+			// aapt resource value: 0x7f0b00c1
+			public const int inboxResponseId = 2131427521;
+			
+			// aapt resource value: 0x7f0b00bd
+			public const int inboxTitle = 2131427517;
+			
+			// aapt resource value: 0x7f0b00c0
+			public const int inboxresponseDateId = 2131427520;
+			
+			// aapt resource value: 0x7f0b00e4
+			public const int info = 2131427556;
 			
 			// aapt resource value: 0x7f0b0064
 			public const int italic = 2131427428;
@@ -2960,8 +2975,8 @@ namespace LumoTrack.App.Android
 			// aapt resource value: 0x7f0b0000
 			public const int item_touch_helper_previous_elevation = 2131427328;
 			
-			// aapt resource value: 0x7f0b00a6
-			public const int largeLabel = 2131427494;
+			// aapt resource value: 0x7f0b00a7
+			public const int largeLabel = 2131427495;
 			
 			// aapt resource value: 0x7f0b0054
 			public const int left = 2131427412;
@@ -2981,50 +2996,56 @@ namespace LumoTrack.App.Android
 			// aapt resource value: 0x7f0b0070
 			public const int list_item = 2131427440;
 			
-			// aapt resource value: 0x7f0b00c3
-			public const int lnlBar = 2131427523;
+			// aapt resource value: 0x7f0b00d4
+			public const int lnlBG = 2131427540;
 			
-			// aapt resource value: 0x7f0b00b4
-			public const int lnlComentarios = 2131427508;
+			// aapt resource value: 0x7f0b00c5
+			public const int lnlBar = 2131427525;
 			
 			// aapt resource value: 0x7f0b00a2
-			public const int lnlConfigurar = 2131427490;
+			public const int lnlBg = 2131427490;
+			
+			// aapt resource value: 0x7f0b00b5
+			public const int lnlComentarios = 2131427509;
+			
+			// aapt resource value: 0x7f0b00a3
+			public const int lnlConfigurar = 2131427491;
 			
 			// aapt resource value: 0x7f0b009b
 			public const int lnlMail = 2131427483;
 			
-			// aapt resource value: 0x7f0b00ce
-			public const int lnlNews = 2131427534;
+			// aapt resource value: 0x7f0b00d2
+			public const int lnlNews = 2131427538;
 			
 			// aapt resource value: 0x7f0b001d
 			public const int lottie_layer_name = 2131427357;
 			
-			// aapt resource value: 0x7f0b00c9
-			public const int map = 2131427529;
+			// aapt resource value: 0x7f0b00cb
+			public const int map = 2131427531;
+			
+			// aapt resource value: 0x7f0b00f5
+			public const int map_item = 2131427573;
+			
+			// aapt resource value: 0x7f0b00c7
+			public const int mapcenterIcon = 2131427527;
+			
+			// aapt resource value: 0x7f0b00f3
+			public const int masked = 2131427571;
+			
+			// aapt resource value: 0x7f0b00dd
+			public const int media_actions = 2131427549;
 			
 			// aapt resource value: 0x7f0b00ee
-			public const int map_item = 2131427566;
+			public const int message = 2131427566;
 			
-			// aapt resource value: 0x7f0b00c5
-			public const int mapcenterIcon = 2131427525;
-			
-			// aapt resource value: 0x7f0b00ed
-			public const int masked = 2131427565;
-			
-			// aapt resource value: 0x7f0b00d7
-			public const int media_actions = 2131427543;
-			
-			// aapt resource value: 0x7f0b00e8
-			public const int message = 2131427560;
-			
-			// aapt resource value: 0x7f0b00ca
-			public const int messageSendLinearLayout = 2131427530;
+			// aapt resource value: 0x7f0b00cc
+			public const int messageSendLinearLayout = 2131427532;
 			
 			// aapt resource value: 0x7f0b00a0
 			public const int messageText = 2131427488;
 			
-			// aapt resource value: 0x7f0b00f0
-			public const int messages_item = 2131427568;
+			// aapt resource value: 0x7f0b00f7
+			public const int messages_item = 2131427575;
 			
 			// aapt resource value: 0x7f0b003d
 			public const int middle = 2131427389;
@@ -3035,14 +3056,14 @@ namespace LumoTrack.App.Android
 			// aapt resource value: 0x7f0b0034
 			public const int multiply = 2131427380;
 			
-			// aapt resource value: 0x7f0b00ad
-			public const int navigation_header_container = 2131427501;
+			// aapt resource value: 0x7f0b00ae
+			public const int navigation_header_container = 2131427502;
 			
 			// aapt resource value: 0x7f0b0047
 			public const int never = 2131427399;
 			
-			// aapt resource value: 0x7f0b00cd
-			public const int newsLayoutId = 2131427533;
+			// aapt resource value: 0x7f0b00d1
+			public const int newsLayoutId = 2131427537;
 			
 			// aapt resource value: 0x7f0b001f
 			public const int none = 2131427359;
@@ -3050,29 +3071,29 @@ namespace LumoTrack.App.Android
 			// aapt resource value: 0x7f0b0020
 			public const int normal = 2131427360;
 			
-			// aapt resource value: 0x7f0b00e4
-			public const int notificationDate = 2131427556;
+			// aapt resource value: 0x7f0b00ea
+			public const int notificationDate = 2131427562;
 			
-			// aapt resource value: 0x7f0b00d0
-			public const int notificationListView = 2131427536;
+			// aapt resource value: 0x7f0b00d5
+			public const int notificationListView = 2131427541;
+			
+			// aapt resource value: 0x7f0b00ec
+			public const int notificationMessage = 2131427564;
+			
+			// aapt resource value: 0x7f0b00eb
+			public const int notificationTitle = 2131427563;
 			
 			// aapt resource value: 0x7f0b00e6
-			public const int notificationMessage = 2131427558;
+			public const int notification_background = 2131427558;
 			
-			// aapt resource value: 0x7f0b00e5
-			public const int notificationTitle = 2131427557;
+			// aapt resource value: 0x7f0b00f6
+			public const int notification_item = 2131427574;
 			
 			// aapt resource value: 0x7f0b00e0
-			public const int notification_background = 2131427552;
+			public const int notification_main_column = 2131427552;
 			
-			// aapt resource value: 0x7f0b00ef
-			public const int notification_item = 2131427567;
-			
-			// aapt resource value: 0x7f0b00da
-			public const int notification_main_column = 2131427546;
-			
-			// aapt resource value: 0x7f0b00d9
-			public const int notification_main_column_container = 2131427545;
+			// aapt resource value: 0x7f0b00df
+			public const int notification_main_column_container = 2131427551;
 			
 			// aapt resource value: 0x7f0b0057
 			public const int parallax = 2131427415;
@@ -3092,14 +3113,14 @@ namespace LumoTrack.App.Android
 			// aapt resource value: 0x7f0b0007
 			public const int progress_horizontal = 2131427335;
 			
-			// aapt resource value: 0x7f0b00a4
-			public const int pushnotificationId = 2131427492;
+			// aapt resource value: 0x7f0b00a5
+			public const int pushnotificationId = 2131427493;
 			
 			// aapt resource value: 0x7f0b0084
 			public const int radio = 2131427460;
 			
-			// aapt resource value: 0x7f0b00c7
-			public const int refreshIcon = 2131427527;
+			// aapt resource value: 0x7f0b00c9
+			public const int refreshIcon = 2131427529;
 			
 			// aapt resource value: 0x7f0b009f
 			public const int reportSpinner = 2131427487;
@@ -3113,11 +3134,11 @@ namespace LumoTrack.App.Android
 			// aapt resource value: 0x7f0b0055
 			public const int right = 2131427413;
 			
-			// aapt resource value: 0x7f0b00df
-			public const int right_icon = 2131427551;
+			// aapt resource value: 0x7f0b00e5
+			public const int right_icon = 2131427557;
 			
-			// aapt resource value: 0x7f0b00db
-			public const int right_side = 2131427547;
+			// aapt resource value: 0x7f0b00e1
+			public const int right_side = 2131427553;
 			
 			// aapt resource value: 0x7f0b0021
 			public const int satellite = 2131427361;
@@ -3194,14 +3215,14 @@ namespace LumoTrack.App.Android
 			// aapt resource value: 0x7f0b0031
 			public const int showTitle = 2131427377;
 			
-			// aapt resource value: 0x7f0b00a5
-			public const int smallLabel = 2131427493;
+			// aapt resource value: 0x7f0b00a6
+			public const int smallLabel = 2131427494;
+			
+			// aapt resource value: 0x7f0b00ad
+			public const int snackbar_action = 2131427501;
 			
 			// aapt resource value: 0x7f0b00ac
-			public const int snackbar_action = 2131427500;
-			
-			// aapt resource value: 0x7f0b00ab
-			public const int snackbar_text = 2131427499;
+			public const int snackbar_text = 2131427500;
 			
 			// aapt resource value: 0x7f0b004f
 			public const int snap = 2131427407;
@@ -3227,8 +3248,8 @@ namespace LumoTrack.App.Android
 			// aapt resource value: 0x7f0b0056
 			public const int start = 2131427414;
 			
-			// aapt resource value: 0x7f0b00d6
-			public const int status_bar_latest_event_content = 2131427542;
+			// aapt resource value: 0x7f0b00dc
+			public const int status_bar_latest_event_content = 2131427548;
 			
 			// aapt resource value: 0x7f0b0067
 			public const int strong = 2131427431;
@@ -3260,8 +3281,8 @@ namespace LumoTrack.App.Android
 			// aapt resource value: 0x7f0b0078
 			public const int textSpacerNoTitle = 2131427448;
 			
-			// aapt resource value: 0x7f0b00b2
-			public const int text_input_password_toggle = 2131427506;
+			// aapt resource value: 0x7f0b00b3
+			public const int text_input_password_toggle = 2131427507;
 			
 			// aapt resource value: 0x7f0b0014
 			public const int textinput_counter = 2131427348;
@@ -3269,8 +3290,8 @@ namespace LumoTrack.App.Android
 			// aapt resource value: 0x7f0b0015
 			public const int textinput_error = 2131427349;
 			
-			// aapt resource value: 0x7f0b00dc
-			public const int time = 2131427548;
+			// aapt resource value: 0x7f0b00e2
+			public const int time = 2131427554;
 			
 			// aapt resource value: 0x7f0b001c
 			public const int title = 2131427356;
@@ -3278,8 +3299,8 @@ namespace LumoTrack.App.Android
 			// aapt resource value: 0x7f0b0080
 			public const int titleDividerNoCustom = 2131427456;
 			
-			// aapt resource value: 0x7f0b00cc
-			public const int titleTextview = 2131427532;
+			// aapt resource value: 0x7f0b00cf
+			public const int titleTextview = 2131427535;
 			
 			// aapt resource value: 0x7f0b007e
 			public const int title_template = 2131427454;
@@ -3290,8 +3311,8 @@ namespace LumoTrack.App.Android
 			// aapt resource value: 0x7f0b007d
 			public const int topPanel = 2131427453;
 			
-			// aapt resource value: 0x7f0b00a9
-			public const int touch_outside = 2131427497;
+			// aapt resource value: 0x7f0b00aa
+			public const int touch_outside = 2131427498;
 			
 			// aapt resource value: 0x7f0b000f
 			public const int transition_current_scene = 2131427343;
@@ -3311,20 +3332,20 @@ namespace LumoTrack.App.Android
 			// aapt resource value: 0x7f0b009e
 			public const int truckSpinner = 2131427486;
 			
-			// aapt resource value: 0x7f0b00a3
-			public const int txtConfigurar = 2131427491;
+			// aapt resource value: 0x7f0b00a4
+			public const int txtConfigurar = 2131427492;
 			
 			// aapt resource value: 0x7f0b009c
 			public const int txtMail = 2131427484;
 			
-			// aapt resource value: 0x7f0b00b6
-			public const int txtMas = 2131427510;
+			// aapt resource value: 0x7f0b00b7
+			public const int txtMas = 2131427511;
 			
-			// aapt resource value: 0x7f0b00cf
-			public const int txtVNews = 2131427535;
+			// aapt resource value: 0x7f0b00d3
+			public const int txtVNews = 2131427539;
 			
-			// aapt resource value: 0x7f0b00c4
-			public const int txtVTitulo = 2131427524;
+			// aapt resource value: 0x7f0b00c6
+			public const int txtVTitulo = 2131427526;
 			
 			// aapt resource value: 0x7f0b0039
 			public const int uniform = 2131427385;
@@ -3335,20 +3356,20 @@ namespace LumoTrack.App.Android
 			// aapt resource value: 0x7f0b0032
 			public const int useLogo = 2131427378;
 			
-			// aapt resource value: 0x7f0b00e9
-			public const int vehicleLabel = 2131427561;
+			// aapt resource value: 0x7f0b00ef
+			public const int vehicleLabel = 2131427567;
 			
-			// aapt resource value: 0x7f0b00ea
-			public const int vehicleModel = 2131427562;
+			// aapt resource value: 0x7f0b00f0
+			public const int vehicleModel = 2131427568;
 			
-			// aapt resource value: 0x7f0b00eb
-			public const int vehicleregNumber = 2131427563;
+			// aapt resource value: 0x7f0b00f1
+			public const int vehicleregNumber = 2131427569;
 			
 			// aapt resource value: 0x7f0b0016
 			public const int view_offset_helper = 2131427350;
 			
-			// aapt resource value: 0x7f0b00ec
-			public const int visible = 2131427564;
+			// aapt resource value: 0x7f0b00f2
+			public const int visible = 2131427570;
 			
 			// aapt resource value: 0x7f0b0068
 			public const int weak = 2131427432;
@@ -3670,67 +3691,103 @@ namespace LumoTrack.App.Android
 			public const int bg = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int Center = 2130903042;
+			public const int bgPRD = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int ES_Message = 2130903043;
+			public const int Center = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int ES_Notification = 2130903044;
+			public const int ES_Message = 2130903044;
 			
 			// aapt resource value: 0x7f030005
-			public const int ic_launcher = 2130903045;
+			public const int ES_MessagePRD = 2130903045;
 			
 			// aapt resource value: 0x7f030006
-			public const int ic_launcher_icon = 2130903046;
+			public const int ES_Notification = 2130903046;
 			
 			// aapt resource value: 0x7f030007
-			public const int ic_launcher_round = 2130903047;
+			public const int ES_NotificationPRD = 2130903047;
 			
 			// aapt resource value: 0x7f030008
-			public const int lumonotificationicon = 2130903048;
+			public const int ic_launcher = 2130903048;
 			
 			// aapt resource value: 0x7f030009
-			public const int Map = 2130903049;
+			public const int ic_launcher_icon = 2130903049;
 			
 			// aapt resource value: 0x7f03000a
-			public const int Message = 2130903050;
+			public const int ic_launcher_iconPRD = 2130903050;
 			
 			// aapt resource value: 0x7f03000b
-			public const int MessageSent = 2130903051;
+			public const int ic_launcher_round = 2130903051;
 			
 			// aapt resource value: 0x7f03000c
-			public const int Municipio = 2130903052;
+			public const int ic_launcherPRD = 2130903052;
 			
 			// aapt resource value: 0x7f03000d
-			public const int Notification = 2130903053;
+			public const int lumonotificationicon = 2130903053;
 			
 			// aapt resource value: 0x7f03000e
-			public const int People = 2130903054;
+			public const int Map = 2130903054;
 			
 			// aapt resource value: 0x7f03000f
-			public const int Refresh = 2130903055;
+			public const int Message = 2130903055;
 			
 			// aapt resource value: 0x7f030010
-			public const int SigueTuCamion = 2130903056;
+			public const int MessageSent = 2130903056;
 			
 			// aapt resource value: 0x7f030011
-			public const int Splashcreen = 2130903057;
+			public const int MessageSentPRD = 2130903057;
 			
 			// aapt resource value: 0x7f030012
-			public const int Splashscreen = 2130903058;
+			public const int Municipio = 2130903058;
 			
 			// aapt resource value: 0x7f030013
-			public const int StatusIconTruck = 2130903059;
+			public const int MunicipioTultepec = 2130903059;
 			
 			// aapt resource value: 0x7f030014
-			public const int TruckPin = 2130903060;
+			public const int Notification = 2130903060;
 			
 			// aapt resource value: 0x7f030015
-			public const int User = 2130903061;
+			public const int People = 2130903061;
 			
 			// aapt resource value: 0x7f030016
-			public const int UserPin = 2130903062;
+			public const int Refresh = 2130903062;
+			
+			// aapt resource value: 0x7f030017
+			public const int SigueTuCamion = 2130903063;
+			
+			// aapt resource value: 0x7f030018
+			public const int SigueTuCamionPRD = 2130903064;
+			
+			// aapt resource value: 0x7f030019
+			public const int Splashcreen = 2130903065;
+			
+			// aapt resource value: 0x7f03001a
+			public const int SplashcreenPRD = 2130903066;
+			
+			// aapt resource value: 0x7f03001b
+			public const int Splashscreen = 2130903067;
+			
+			// aapt resource value: 0x7f03001c
+			public const int SplashscreenPRD = 2130903068;
+			
+			// aapt resource value: 0x7f03001d
+			public const int StatusIconTruck = 2130903069;
+			
+			// aapt resource value: 0x7f03001e
+			public const int TruckPin = 2130903070;
+			
+			// aapt resource value: 0x7f03001f
+			public const int TruckPinPRD = 2130903071;
+			
+			// aapt resource value: 0x7f030020
+			public const int User = 2130903072;
+			
+			// aapt resource value: 0x7f030021
+			public const int UserPin = 2130903073;
+			
+			// aapt resource value: 0x7f030022
+			public const int UserPinPRD = 2130903074;
 			
 			static Mipmap()
 			{

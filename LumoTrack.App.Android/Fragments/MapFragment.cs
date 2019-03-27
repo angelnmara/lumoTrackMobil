@@ -95,7 +95,7 @@ namespace LumoTrack.App.Android.Fragments
 
             var lnbar = _view.FindViewById(Resource.Id.lnlBar);
             TextView txtTitulo = _view.FindViewById<TextView>(Resource.Id.txtVTitulo);
-            lnbar.SetBackgroundColor(Color.ParseColor("#ffff4d"));
+            lnbar.SetBackgroundColor(Color.ParseColor("#ffcb01"));
             txtTitulo.SetTextColor(Color.Black);
             ImageView centerIcon = _view.FindViewById<ImageView>(Resource.Id.iconCenter);
             centerIcon.SetColorFilter(Color.Black);
@@ -314,7 +314,11 @@ namespace LumoTrack.App.Android.Fragments
 
             marker.SetPosition(CurrentPosition);
 
-            marker.SetIcon(GetCustomBitmapDescriptor("", Resource.Mipmap.UserPin));
+            /*  Realizar cambios dinamicos  */
+
+            marker.SetIcon(GetCustomBitmapDescriptor("", Resource.Mipmap.UserPinPRD));
+
+            /*  Realizar cambios dinamicos  */
 
             MarkerOptionsArray.Add(marker);
 
@@ -329,7 +333,11 @@ namespace LumoTrack.App.Android.Fragments
                 {
                     LatLng vehicleLocation = new LatLng(vehicle.latitude, vehicle.longitude);
 
-                    MarkerOptions markerVehicle = GetMarker(vehicleLocation, Resource.Mipmap.TruckPin, vehicle.trackerId);
+                    /*  Realizar cambios dinamicos  */
+
+                    MarkerOptions markerVehicle = GetMarker(vehicleLocation, Resource.Mipmap.TruckPinPRD, vehicle.trackerId);
+
+                    /*  Realizar cambios dinamicos  */
 
                     MarkerOptionsArray.Add(markerVehicle);
 

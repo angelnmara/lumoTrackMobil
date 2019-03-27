@@ -1,17 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Android.App;
 using Android.Content;
 using Android.OS;
-using Android.Runtime;
 using Android.Support.V7.App;
-using Android.Util;
-using Android.Views;
-using Android.Widget;
-using Firebase.Iid;
 using LumoTrack.App.Android.Helpers;
 
 namespace LumoTrack.App.Android.Activities
@@ -23,7 +14,7 @@ namespace LumoTrack.App.Android.Activities
 
         public override void OnCreate(Bundle savedInstanceState, PersistableBundle persistentState)
         {
-            base.OnCreate(savedInstanceState, persistentState);
+            base.OnCreate(savedInstanceState, persistentState);            
             SetContentView(Resource.Layout.MessageSentLayout);
         }
 
