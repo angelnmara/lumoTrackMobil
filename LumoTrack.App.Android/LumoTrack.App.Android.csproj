@@ -79,6 +79,7 @@
     <Compile Include="Fragments\NavbarFragment.cs" />
     <Compile Include="Fragments\NewsFragment.cs" />
     <Compile Include="Helpers\AlertDialogHelper.cs" />
+    <Compile Include="Helpers\Constants.cs" />
     <Compile Include="Helpers\CustomFirebaseMessagingService.cs" />
     <Compile Include="Helpers\DeviceManager.cs" />
     <Compile Include="Helpers\EditTextTouchListener.cs" />
@@ -86,6 +87,7 @@
     <Compile Include="Helpers\InternetConnectionHelper.cs" />
     <Compile Include="Helpers\Receiver.cs" />
     <Compile Include="Helpers\TimeZoneHelper.cs" />
+    <Compile Include="Models\ListaPartidosColores.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

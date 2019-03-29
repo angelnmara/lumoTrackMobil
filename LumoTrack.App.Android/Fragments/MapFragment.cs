@@ -95,12 +95,12 @@ namespace LumoTrack.App.Android.Fragments
 
             var lnbar = _view.FindViewById(Resource.Id.lnlBar);
             TextView txtTitulo = _view.FindViewById<TextView>(Resource.Id.txtVTitulo);
-            lnbar.SetBackgroundColor(Color.ParseColor("#ffcb01"));
-            txtTitulo.SetTextColor(Color.Black);
+            lnbar.SetBackgroundColor(Color.ParseColor(Constants.ColorPrimario));
+            txtTitulo.SetTextColor(Color.ParseColor(Constants.ColorSecundario));
             ImageView centerIcon = _view.FindViewById<ImageView>(Resource.Id.iconCenter);
-            centerIcon.SetColorFilter(Color.Black);
+            centerIcon.SetColorFilter(Color.ParseColor(Constants.ColorSecundario));
             ImageView iconRefresh = _view.FindViewById<ImageView>(Resource.Id.iconRefresh);
-            iconRefresh.SetColorFilter(Color.Black);
+            iconRefresh.SetColorFilter(Color.ParseColor(Constants.ColorSecundario));
 
             /*  Realizar cambios dinamicos  */
             _lottieAnimation = _view.FindViewById<LinearLayout>(Resource.Id.animation_view);

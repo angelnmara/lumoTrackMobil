@@ -59,21 +59,26 @@ namespace LumoTrack.App.Android.Fragments
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             _view = inflater.Inflate(Resource.Layout.NewsLayout, container, false);
+            try {
+                /*  Realizar cambios dinamicos  */
 
-            /*  Realizar cambios dinamicos  */
+                LinearLayout lnlNews = _view.FindViewById<LinearLayout>(Resource.Id.lnlNews);
+                lnlNews.SetBackgroundColor(Color.ParseColor(Constants.ColorPrimario));
+                TextView txtNews = _view.FindViewById<TextView>(Resource.Id.txtVNews);
+                txtNews.SetTextColor(Color.ParseColor(Constants.ColorSecundario));
 
-            LinearLayout lnlNews = _view.FindViewById<LinearLayout>(Resource.Id.lnlNews);
-            lnlNews.SetBackgroundColor(Color.ParseColor("#ffcb01"));
-            TextView txtNews = _view.FindViewById<TextView>(Resource.Id.txtVNews);
-            txtNews.SetTextColor(Color.Black);
-            LinearLayout lnlBG = _view.FindViewById<LinearLayout>(Resource.Id.lnlBG);
-            lnlBG.SetBackgroundResource(Resource.Mipmap.bgPRD);
+                LinearLayout lnlBG = _view.FindViewById<LinearLayout>(Resource.Id.lnlBG);
+                //int resource = Resources.GetIdentifier(Constants.Background.ToLower(), Constants.Mipmap, Application.Context.PackageName);
+                //var resourceId = (int)typeof(Resource.Drawable).GetField(Constants.Background.ToLower()).GetValue(null);
+                lnlBG.SetBackgroundResource(Resources.GetIdentifier(Constants.Background.ToLower(), Constants.Mipmap, Application.Context.PackageName));
 
-            /*  Realizar cambios dinamicos  */
+                /*  Realizar cambios dinamicos  */
 
-            _lottieAnimation = _view.FindViewById<LinearLayout>(Resource.Id.animation_view);
-            _lottieAnimation.Visibility = ViewStates.Visible;
-
+                _lottieAnimation = _view.FindViewById<LinearLayout>(Resource.Id.animation_view);
+                _lottieAnimation.Visibility = ViewStates.Visible;
+            } catch (Exception ex) {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
+            }            
             return _view;
         }
 
@@ -146,36 +151,39 @@ namespace LumoTrack.App.Android.Fragments
 
         private void LoadElements()
         {
+            try {
+                if (_notificationList != null && _notificationList.Any())
+                {
+                    _notificationListView = _view.FindViewById<ListView>(Resource.Id.notificationListView);
 
+                    var notificationAdapter = new NotificationAdapter(Activity, _notificationList);
+                    var newsLayout = _view.FindViewById<LinearLayout>(Resource.Id.newsLayoutId);
+                    newsLayout.Visibility = ViewStates.Visible;
+                    _lottieAnimation.Visibility = ViewStates.Gone;
 
-            if (_notificationList != null && _notificationList.Any())
-            {
-                _notificationListView = _view.FindViewById<ListView>(Resource.Id.notificationListView);
+                    _notificationListView.Adapter = notificationAdapter;
+                    notificationAdapter.NotifyDataSetChanged();
+                }
+                else
+                {
+                    _emptyState = _view.FindViewById<LinearLayout>(Resource.Id.empty_state);
 
-                var notificationAdapter = new NotificationAdapter(Activity, _notificationList);
-                var newsLayout = _view.FindViewById<LinearLayout>(Resource.Id.newsLayoutId);
-                newsLayout.Visibility = ViewStates.Visible;
-                _lottieAnimation.Visibility = ViewStates.Gone;
+                    /*  Realizar cambios dinamicos  */
 
-                _notificationListView.Adapter = notificationAdapter;
-                notificationAdapter.NotifyDataSetChanged();
-            }
-            else
-            {
-                _emptyState = _view.FindViewById<LinearLayout>(Resource.Id.empty_state);
+                    ImageView imgNotificacion = _emptyState.FindViewById<ImageView>(Resource.Id.imgNotificacion);
+                    imgNotificacion.SetImageResource(Resource.Mipmap.ES_NotificationPRD);
 
-                /*  Realizar cambios dinamicos  */
+                    /*  Realizar cambios dinamicos  */
 
-                ImageView imgNotificacion = _emptyState.FindViewById<ImageView>(Resource.Id.imgNotificacion);
-                imgNotificacion.SetImageResource(Resource.Mipmap.ES_NotificationPRD);
+                    _emptyState.Visibility = ViewStates.Visible;
+                    _lottieAnimation.Visibility = ViewStates.Gone;
 
-                /*  Realizar cambios dinamicos  */
-
-                _emptyState.Visibility = ViewStates.Visible;
-                _lottieAnimation.Visibility = ViewStates.Gone;
-            }
-            _lottieAnimation.Dispose();
-            GarbageCollector();
+                }
+                _lottieAnimation.Dispose();
+                GarbageCollector();
+            } catch (Exception ex) {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
+            }            
         }
 
         private async Task LoadData()

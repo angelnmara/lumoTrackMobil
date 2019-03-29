@@ -5,11 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Android.App;
-using Android.Content;
 using Android.Graphics;
 using Android.OS;
-using Android.Runtime;
-using Android.Util;
 using Android.Views;
 using Android.Widget;
 using LumoTrack.App.Android.Adapters;
@@ -42,7 +39,7 @@ namespace LumoTrack.App.Android.Fragments
 
         LinearLayout _lottieAnimation;
 
-        ScrollView _commentView;
+        ScrollView _commentView;        
 
         public CommentFragment(string truckid)
         {
@@ -77,12 +74,12 @@ namespace LumoTrack.App.Android.Fragments
         {
             _view = inflater.Inflate(Resource.Layout.CommentLayout, container, false);
 
-            /*  Realizar cambios dinamicos  */
+            /*  Realizar cambios dinamicos  */            
 
             LinearLayout lnlMail = _view.FindViewById<LinearLayout>(Resource.Id.lnlMail);
-            lnlMail.SetBackgroundColor(Color.ParseColor("#ffcb01"));
+            lnlMail.SetBackgroundColor(Color.ParseColor(Constants.ColorPrimario));
             TextView txtMail = _view.FindViewById<TextView>(Resource.Id.txtMail);
-            txtMail.SetTextColor(Color.Black);
+            txtMail.SetTextColor(Color.ParseColor(Constants.ColorSecundario));
 
             /*  Realizar cambios dinamicos  */
 
@@ -157,8 +154,8 @@ namespace LumoTrack.App.Android.Fragments
 
             /*  Realizar cambios dinamicos  */
 
-            _sendButton.SetBackgroundColor(Color.ParseColor("#ffcb01"));
-            _sendButton.SetTextColor(Color.Black);
+            _sendButton.SetBackgroundColor(Color.ParseColor(Constants.ColorPrimario));
+            _sendButton.SetTextColor(Color.ParseColor(Constants.ColorSecundario));
 
             /*  Realizar cambios dinamicos  */
 
@@ -260,14 +257,15 @@ namespace LumoTrack.App.Android.Fragments
 
         private InboxDTO GenerateInboxMessage(Tuple<int, string> truckInfo, ReportTypesEnum reportType)
         {
-            DTO.InboxDTO inboxDTO = new DTO.InboxDTO();
-
-            inboxDTO.CreationDate = DateTime.Now;
-            inboxDTO.Message = _messageText.Text;
-            inboxDTO.ReportType = reportType;
-            inboxDTO.TruckId = truckInfo.Item1.ToString();
-            inboxDTO.TruckName = truckInfo.Item2;
-            inboxDTO.UserId = UserID;
+            DTO.InboxDTO inboxDTO = new DTO.InboxDTO
+            {
+                CreationDate = DateTime.Now,
+                Message = _messageText.Text,
+                ReportType = reportType,
+                TruckId = truckInfo.Item1.ToString(),
+                TruckName = truckInfo.Item2,
+                UserId = UserID
+            };
 
             return inboxDTO;
         }

@@ -17,6 +17,7 @@ using Android.Support.V4.Content;
 //using System.Drawing;
 using Android.Content.Res;
 using Android.Graphics;
+using LumoTrack.App.Android.Helpers;
 
 namespace LumoTrack.App.Android.Fragments
 {
@@ -52,11 +53,12 @@ namespace LumoTrack.App.Android.Fragments
             /*  Realizar cambios dinamicos  */
 
             LinearLayout lnlBg = _view.FindViewById<LinearLayout>(Resource.Id.lnlBg);
-            lnlBg.SetBackgroundResource(Resource.Mipmap.bgPRD);
+            lnlBg.SetBackgroundResource(Resources.GetIdentifier(Constants.Background.ToLower(), Constants.Mipmap, Application.Context.PackageName));
+
             LinearLayout lnlConfigurar = _view.FindViewById<LinearLayout>(Resource.Id.lnlConfigurar);
-            lnlConfigurar.SetBackgroundColor(Color.ParseColor("#ffcb01"));
+            lnlConfigurar.SetBackgroundColor(Color.ParseColor(Constants.ColorPrimario));
             TextView txtConfigurar = _view.FindViewById<TextView>(Resource.Id.txtConfigurar);
-            txtConfigurar.SetTextColor(Color.Black);
+            txtConfigurar.SetTextColor(Color.ParseColor(Constants.ColorSecundario));
 
             /*  Realizar cambios dinamicos  */
 

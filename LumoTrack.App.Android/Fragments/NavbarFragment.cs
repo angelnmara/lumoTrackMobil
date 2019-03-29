@@ -10,6 +10,7 @@ using Android.Runtime;
 using Android.Util;
 using Android.Views;
 using Android.Widget;
+using LumoTrack.App.Android.Helpers;
 
 namespace LumoTrack.App.Android.Fragments
 {
@@ -31,11 +32,12 @@ namespace LumoTrack.App.Android.Fragments
             /*  Realizar cambios dinamicos  */
 
             ImageView imageViewSigueTuCamion = view.FindViewById<ImageView>(Resource.Id.mapcenterIcon);
-            imageViewSigueTuCamion.SetImageResource(Resource.Mipmap.SigueTuCamionPRD);
+            //int idresource = Resources.GetIdentifier(Constants.SigueTuCamion.ToLower(), Constants.Mipmap, Application.Context.PackageName);
+            imageViewSigueTuCamion.SetImageResource(Resources.GetIdentifier(Constants.SigueTuCamion.ToLower(), Constants.Mipmap, Application.Context.PackageName));
 
             /*Por municipio*/
             ImageView imageViewMunicipio = view.FindViewById<ImageView>(Resource.Id.imgMunicipio);
-            imageViewMunicipio.SetImageResource(Resource.Mipmap.MunicipioTultepec);
+            imageViewMunicipio.SetImageResource(Resources.GetIdentifier(Constants.MunicipioImg.ToLower(), Constants.Mipmap, Application.Context.PackageName));
 
             /*  Realizar cambios dinamicos  */
 

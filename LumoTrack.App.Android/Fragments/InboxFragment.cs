@@ -51,11 +51,11 @@ namespace LumoTrack.App.Android.Fragments
             /*  Realizar cambios dinamicos  */
 
             LinearLayout lnlComentarios = _view.FindViewById<LinearLayout>(Resource.Id.lnlComentarios);
-            lnlComentarios.SetBackgroundColor(Color.ParseColor("#ffcb01"));
+            lnlComentarios.SetBackgroundColor(Color.ParseColor(Constants.ColorPrimario));
             TextView txtMail = _view.FindViewById<TextView>(Resource.Id.txtMail);
-            txtMail.SetTextColor(Color.Black);
+            txtMail.SetTextColor(Color.ParseColor(Constants.ColorSecundario));
             TextView txtMas = _view.FindViewById<TextView>(Resource.Id.txtMas);
-            txtMas.SetTextColor(Color.Black);
+            txtMas.SetTextColor(Color.ParseColor(Constants.ColorSecundario));
 
             /*  Realizar cambios dinamicos  */
 
