@@ -6,7 +6,7 @@
   <item>
     <bitmap
       android:id="@+id/bitpamSplash"
-        android:src="@mipmap/splashscreenprd"
+        android:src="@mipmap/splashscreentultepec"
         android:tileMode="disabled"
         android:gravity="fill"/>
   </item>
